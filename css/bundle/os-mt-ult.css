@@ -238,11 +238,11 @@ h2.ult {
     width: 90%;
     padding-left: 4%;
     position: absolute;
-    top: 140px;
+    top: 70px;
 }
 @media all and (min-width: 37.5em) {
     .search-bar-ult {
-        top: 180px;
+        top: 70px;
     }
 }
 
@@ -461,7 +461,7 @@ label.mt-feedback-consent-label {
     .search-bar-ult {
         width: 53%;
         padding-left: 24%;
-        top: 180px;
+        top: 117px;
     }
 
     .elm-content-footer-ult {
@@ -528,6 +528,13 @@ label.mt-feedback-consent-label {
     }
 }
 
+/* ADJUSTING POSITIONS */
+@media (min-width: 80em) {
+    article.elm-content-container.evaluation-kb header {
+        padding: 70px 50px 10px 50px !important;
+        margin-top: 10px
+    }
+}
 
 /* BEST PRACTICES*/
 .columbia-breadcrumb-home-documentation-bestpractices nav.elm-header-global-nav.elm-nav {
@@ -558,5 +565,24 @@ label.mt-feedback-consent-label {
 .columbia-breadcrumb-home-documentation-how-toguides .elm-content-container.background-ult {
     margin-top: 0px !important;
 }
+
+.elm-meta-data dl {
+    font-size: 0.9rem !important;
+    font-style:italic;
+}
+
+.elm-meta-data dt {
+    font-weight: 100 !important;
+}
+
+#li-collaboration-url {
+    top: 0px !important;
+    margin-top: 0;
+}
+
+.elm-social-share {
+    display: none !important;
+}
+
 
 mt-leave-feedback mt-feedback-rating-item
