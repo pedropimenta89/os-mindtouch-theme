@@ -885,6 +885,15 @@ button,input,select,textarea {
     line-height: 21px !important;
 }
 
+.os-note li {
+    font-size: 14px !important;
+    color: #505050 !important;
+}
+
+.os-note ul {
+    margin-bottom: 8px !important;
+}
+
 .os-info {
     background-color: #fcfcfc;
     border-color: #aab8c6;
