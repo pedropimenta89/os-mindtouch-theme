@@ -2972,13 +2972,14 @@ body.body-with-sidebar {
     margin-top: 3rem;
     padding-left: 3%
 }
-[class*=columbia-breadcrumb-home-documentation-10] article h4~* {
+[class*=columbia-breadcrumb-home-documentation-10] h4 ~ .os-note {
     margin-left: 3%;
+    padding-left: 36px;
 }
-[class*=columbia-breadcrumb-home-documentation-10] header h4~* {
+[class*=columbia-breadcrumb-home-documentation-10] h4~* {
     padding-left: 3%
 }
-[class*=columbia-breadcrumb-home-documentation-10] header h4~ul li {
+[class*=columbia-breadcrumb-home-documentation-10] h4~ul li {
     margin-left: 3%
 }
 [class*=columbia-breadcrumb-home-documentation-10] table {
