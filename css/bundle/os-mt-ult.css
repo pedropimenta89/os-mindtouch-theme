@@ -134,17 +134,24 @@ h2.ult {
     height: 1px;
     background: #80858c;
 }
+
 /* BUTTON */
 .see-more-btn {
-    border: 1px solid #f22800;
+    border: 1px solid #dedfe4;
     border-radius: 0.333rem;
-    color: #f22800 !important;
+    color: #686e76 !important;
     font-family: Cabin;
     font-size: 1rem;
     padding: 0.7rem 1.1rem;
     right: 3.6rem;
     position: absolute;
 }
+
+.see-more-btn:hover {
+     border: 1px solid #979ca2;
+     color: #39414a !important;
+}
+
 /* HOMEPAGE */
 .cards-list-ult>div {
     flex: 0 50%;
