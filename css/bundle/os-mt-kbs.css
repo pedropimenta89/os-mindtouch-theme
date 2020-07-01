@@ -2772,8 +2772,7 @@ body.body-with-sidebar {
     border-bottom: 10px solid #fff
 }
 .columbia-breadcrumb-home-documentation .elm-content-footer {
-    display: none;
-    visibility: hidden
+    display: block;
 }
 .columbia-breadcrumb-home-documentation ol.elm-meta-data.elm-meta-top {
     display: none;
