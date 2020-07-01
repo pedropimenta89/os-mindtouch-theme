@@ -457,7 +457,7 @@ label.mt-feedback-consent-label {
     .elm-main-content-ult {
         max-width: 80%;
         padding-left: 24%;
-        margin: 0px;
+        margin-top: 3rem !important;
     }
 
     .elm-article-feedback-ult {
@@ -543,8 +543,8 @@ label.mt-feedback-consent-label {
 /* ADJUSTING POSITIONS */
 @media (min-width: 80em) {
     article.elm-content-container.evaluation-kb header {
-        padding: 70px 50px 10px 50px !important;
-        margin-top: 10px
+        padding: 0px 50px 10px 50px !important;
+        margin-top: 0;
     }
 }
 
