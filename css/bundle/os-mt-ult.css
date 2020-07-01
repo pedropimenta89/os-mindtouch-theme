@@ -361,14 +361,14 @@ ol.elm-meta-article-navigation {
 /* TYPOGRAPHY */
 [class*=columbia-breadcrumb-home-documentation-10] h1 {
     font-family: Cabin;
-    color: #0A141E;
+    color: #222B34;
     font-size: 1.4rem;
     line-height: 1.3rem;
 }
 
 [class*=columbia-breadcrumb-home-documentation-10] h2 {
     font-family: 'NotoSans', sans-serif;
-    color: #80858c !important;
+    color: #39414A !important;
     font-size: 1.2rem;
     line-height: 1.3rem;
 }
