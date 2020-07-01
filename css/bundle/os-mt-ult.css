@@ -383,7 +383,7 @@ ol.elm-meta-article-navigation {
 [class*=columbia-breadcrumb-home-documentation-10] p, li, dl {
     font-size: 0.9rem !important;
     font-family: 'NotoSans', sans-serif !important;
-    color: #80858C !important;
+    color: #686E76 !important;
 }
 
 .mt-feedback-form {
@@ -406,7 +406,7 @@ button.mt-feedback-button {
 
 label.mt-feedback-consent-label {
     width: 90%;
-    color: #80858c;
+    color: #686E76;
 }
 
 .see-more-list-ult .flex-column {
@@ -506,21 +506,21 @@ label.mt-feedback-consent-label {
     }
 
     [class*=columbia-breadcrumb-home-documentation-10] h1 {
-        color: #80858c;
+        color: #686E76;
         font-family: 'NotoSans', sans-serif;
         font-size: 1.5rem !important;
         line-height: 1.8rem;
     }
 
     [class*=columbia-breadcrumb-home-documentation-10] h2 {
-        color: #80858c;
+        color: #686E76;
         font-family: 'NotoSans', sans-serif;
         font-size: 1.3rem !important;
         line-height: 1.8rem;
     }
 
     [class*=columbia-breadcrumb-home-documentation-10] h3 {
-        color: #80858c;
+        color: #686E76;
         font-family: 'NotoSans', sans-serif;
         font-size: 1.1rem !important;
         line-height: 1.8rem;
