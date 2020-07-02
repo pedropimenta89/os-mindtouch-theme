@@ -65,7 +65,7 @@ h2.ult {
 .card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-bottom: 5.5rem;
 }
 
@@ -78,7 +78,7 @@ h2.ult {
 .card-header {
     background: #DB2400;
     border-radius: 6px 6px 0px 0px;
-    padding: 2rem;
+    padding: 1.5rem;
     color: #FFFFFF;
     font-family: Cabin;
     font-style: normal;
