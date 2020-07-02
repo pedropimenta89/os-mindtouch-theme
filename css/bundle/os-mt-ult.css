@@ -581,7 +581,7 @@ label.mt-feedback-consent-label {
 
 .elm-meta-data dl {
     font-size: 0.9rem !important;
-    font-style:italic;
+    font-style: normal;
 }
 
 .elm-meta-data dt {
