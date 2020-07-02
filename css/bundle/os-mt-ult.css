@@ -387,6 +387,10 @@ ol.elm-meta-article-navigation {
     color: #686E76 !important;
 }
 
+[class*=columbia-breadcrumb-home-documentation-10] li, dl {
+    color: #80858C !important;
+}
+
 .mt-feedback-form {
     display: unset !important;;
 }
