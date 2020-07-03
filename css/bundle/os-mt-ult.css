@@ -592,11 +592,6 @@ label.mt-feedback-consent-label {
     font-weight: 100 !important;
 }
 
-#li-collaboration-url {
-    top: 0px !important;
-    margin-top: 0;
-}
-
 .elm-social-share {
     display: none !important;
 }
