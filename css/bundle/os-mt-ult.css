@@ -22,7 +22,7 @@ h2.ult {
 }
 
 .input-ult::placeholder {
-    color: #39414a;
+    color: #979CA2;
 }
 
 .vertical-bar {
@@ -596,5 +596,50 @@ label.mt-feedback-consent-label {
     display: none !important;
 }
 
+@media all and (max-width: 768px) {
+    /* For mobile and tablet: */
 
-mt-leave-feedback mt-feedback-rating-item
+    .card-header {
+        padding: 1.0rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .width-container-ult {
+		padding-bottom: 0;
+	}
+
+	.card-img {
+        display: none;
+    }
+    
+    .see-more-list-ult .card-block {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    
+    .card-body-text {
+        display:none;
+    }
+
+    .card-body-title-blue {
+        font-weight: normal;
+        font-size: 14px;
+        color: #32A9E5;
+        margin-bottom: 0;
+    }
+
+    .see-more-btn {
+        align-self: flex-end;
+        width: 49px;
+    }
+
+    .card-horizontal-bar {
+        margin-top: 32px;
+    }
+
+    .card {
+        margin-bottom: 0;
+        padding-bottom: 2.5rem;
+    }
+}
