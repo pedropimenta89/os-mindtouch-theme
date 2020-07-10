@@ -94,21 +94,23 @@
 }
 
 @media all and (max-width: 47.5em) {
-  .page {    
-    display: block;    
-    padding: 5px 15px;    
-    -webkit-border-radius: 4px;   
-    border-radius: 4px;    
-    margin-top: 6px;    
-    width: auto;    
-    text-decoration: none;    
-    font-weight: bold;    
-    color: #666;
-  }
-  .parent.crumb a {    
-    text-decoration: none;    
-    color: #08C;
-  }
+	.page {    
+		display: block;    
+		padding: 5px 15px;   
+		border-radius: 4px;    
+		margin-top: 6px;    
+		width: auto;    
+		text-decoration: none;    
+		font-weight: bold;    
+		color: #666;
+	}
+	
+	.parent.crumb a {
+		color: #08C;
+		font-weight: inherit;
+		text-decoration: none;
+	}
+	
   .breadcrumb .page:nth-child(2) {    
     margin-left: 5px;
   }
@@ -124,14 +126,13 @@
   }
 	
   .breadcrumb {
-	background: #fff;
-	border-bottom: 1px solid #E7ECED;
-	-webkit-border-radius: 4px;
-	  	border-radius: 4px;
+	background: inherit;
+	border-bottom: none;
+	border-radius: 4px;
 	display: contents;
 	margin: 0 0 0 -10px;
-    	padding: 0 10px 30px;
-    	width: 100%;    
+   	padding: 0 10px 30px;
+   	width: 100%;    
   }
   .elm-pdf-export {    
     display: none !important;
