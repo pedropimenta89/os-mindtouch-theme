@@ -96,19 +96,10 @@
 @media all and (max-width: 47.5em) {
   .page {    
     display: block;    
-    padding: 5px 15px 5px 15px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    -webkit-border-radius: 4px;
+    padding: 5px 15px;    
+    -webkit-border-radius: 4px;   
     border-radius: 4px;    
     margin-top: 6px;    
-    background: #efefef;    
     width: auto;    
     text-decoration: none;    
     font-weight: bold;    
