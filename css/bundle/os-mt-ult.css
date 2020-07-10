@@ -635,14 +635,23 @@ label.mt-feedback-consent-label {
         font-family: Noto Sans;
         margin-bottom: 1rem;
     }
+	
+    .card-body-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
 
     .see-more-btn {
         align-self: flex-end;
         width: 49px;
     }
+	
+    .see-more-btn-wrapper {
+    	padding: 20px;
+    }
 
     .card-horizontal-bar {
-        margin: 32px 0;
+        margin: 32px 0 0 0;
     }
 
     .card {
