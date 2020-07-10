@@ -614,7 +614,7 @@ label.mt-feedback-consent-label {
         display: none;
     }
     
-    .see-more-list-ult .card-block {
+    .see-more-list-ult .card-block, .card-block {
         padding: 1rem 1rem 0rem 1rem;
     }
     
@@ -623,10 +623,17 @@ label.mt-feedback-consent-label {
     }
 
     .card-body-title-blue {
+	font-family: Noto Sans;
         font-weight: normal;
         font-size: 14px;
         color: #32A9E5;
         margin-bottom: 0;
+    }
+	
+    .card-body-title {
+        font-size: 18px;
+        font-family: Noto Sans;
+        margin-bottom: 1rem;
     }
 
     .see-more-btn {
@@ -635,7 +642,7 @@ label.mt-feedback-consent-label {
     }
 
     .card-horizontal-bar {
-        margin-top: 32px;
+        margin: 32px 0;
     }
 
     .card {
