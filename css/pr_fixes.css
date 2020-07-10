@@ -115,31 +115,23 @@
   .breadcrumb .page:nth-child(3) {    
     margin-left: 10px;
   }
+	
   .breadcrumb .page:nth-child(4) {    
     margin-left: 35px;    
     line-height: 1.4;    
     font-weight: bold;    
     color: #7A878B;
   }
-  .breadcrumb {    
-    border-bottom: 1px solid #E7ECED;    
-    padding: 10px;    
-    padding-top: 0px;    
-    padding-bottom: 30px;    
-    background: #fff;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    
-    -webkit-border-radius: 4px;    -webkit-border-radius: 4px;
-    border-radius: 4px;    
-    margin: 0px;    
-    width: 100%;    
-    margin-left: -10px;
+	
+  .breadcrumb {
+	background: #fff;
+	border-bottom: 1px solid #E7ECED;
+	-webkit-border-radius: 4px;
+	  	border-radius: 4px;
+	display: contents;
+	margin: 0 0 0 -10px;
+    	padding: 0 10px 30px;
+    	width: 100%;    
   }
   .elm-pdf-export {    
     display: none !important;
