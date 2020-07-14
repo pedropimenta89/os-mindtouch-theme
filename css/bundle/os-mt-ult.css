@@ -671,6 +671,9 @@ label.mt-feedback-consent-label {
 
 @media all and (max-width: 768px) {
     /* For mobile and tablet: */
+	article.elm-content-container {
+		margin-top: 0 !important;
+	}
 	
 	[class*=columbia-breadcrumb-home-documentation-10] .elm-meta-top {
     	border-bottom: 1px solid #DEDFE4 !important;
