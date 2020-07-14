@@ -10,10 +10,6 @@ html {
     color: #08c
 }
 
-.mt-lang-indicator .ui-button-icon:visited,.ui-widget a,a,a:visited {
-    color: unset;
-}
-
 .no-touch .ui-button-icon:hover,.no-touch .ui-widget-content a:hover,.no-touch .ui-widget-header a:hover,.no-touch a:hover,.ui-button-icon:active,a:active {
     color: #005580;
     text-decoration: none
