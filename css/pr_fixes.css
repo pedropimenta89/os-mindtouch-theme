@@ -143,10 +143,6 @@
 		width: 100%;    
 	}
 	
-	.elm-pdf-export {    
-		display: none !important;
-	}
-	
 	[class*=columbia-breadcrumb-home-evaluation] h1 {    
 		margin-bottom: 0 !important;
 	}
