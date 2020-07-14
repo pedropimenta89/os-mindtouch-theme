@@ -640,6 +640,11 @@ label.mt-feedback-consent-label {
         font-size: 14px;
         line-height: 21px;
     }
+     
+    .small-card {
+    	margin-top: 10px;
+    	padding-bottom: 10px;
+    }
 	
     .small-card .card-body-title {
 	font-size: 15px;
