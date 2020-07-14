@@ -3161,7 +3161,7 @@ body.body-with-sidebar {
 }
 [class*=columbia-breadcrumb-home-documentation-10] .elm-meta-top {
     font-size: 10px;
-    border-bottom: 1px solid #DEDFE4 !important;
+    border-bottom: 1px solid #DEDFE4;
 }
 [class*=columbia-breadcrumb-home-documentation-10] .elm-meta-top .elm-last-modified,
 [class*=columbia-breadcrumb-home-documentation-10] .elm-meta-top .elm-page-restriction {
