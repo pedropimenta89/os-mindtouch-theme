@@ -5123,7 +5123,7 @@ body.body-with-sidebar {
 }
 @media (max-width: 37.5em) {
     .breadcrumb .page:last-child {
-        display: none !important
+        display: block !important
     }
     .breadcrumb .parent.crumb a {
         text-decoration: none !important
@@ -5267,7 +5267,7 @@ body.body-with-sidebar {
     .evaluation-hero p {
         line-height: 1.4 !important
     }
-    
+    .elm-pdf-export,
     .evaluation-hero p,
     .mt-toggle-container {
         display: none !important
