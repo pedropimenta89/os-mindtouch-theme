@@ -598,6 +598,11 @@ label.mt-feedback-consent-label {
 
 @media all and (max-width: 768px) {
     /* For mobile and tablet: */
+	
+	.elm-meta-data li.elm-meta-icons {
+		float: right;
+		margin-top: 1.5rem;
+	}
 
     .card-header {
         padding: 1.0rem;
