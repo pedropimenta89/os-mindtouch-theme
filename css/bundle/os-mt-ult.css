@@ -283,7 +283,7 @@ h2.ult {
 .elm-article-feedback-ult {
     display: block;
     margin-bottom: 0px !important;
-	margin-top: 0px !important;
+	margin-top: 0px;
 	top: 0;
 }
 
@@ -680,6 +680,10 @@ label.mt-feedback-consent-label {
     	border-bottom: 1px solid #DEDFE4 !important;
 	}
 	
+	.elm-article-feedback-ult {
+		margin-top: 0px !important;
+	}
+	
 	.elm-meta-data li.elm-meta-icons {
 		float: right;
 		margin-top: 1.5rem;
@@ -709,7 +713,7 @@ label.mt-feedback-consent-label {
     }
 
     .card-body-title-blue {
-	font-family: Noto Sans;
+		font-family: Noto Sans;
         font-weight: normal;
         font-size: 14px;
         color: #32A9E5;
