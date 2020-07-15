@@ -247,6 +247,7 @@ h2.ult {
 .card-ml-2 {
     margin-left: 0rem;
 }
+
 @media all and (min-width: 50em) {
     .cards-list-ult {
         -webkit-box-orient: horizontal;
@@ -280,18 +281,17 @@ h2.ult {
 /* TODO In mobile set to bottom of the page */
 
 .elm-article-feedback-ult {
-    display: none;
     display: block;
-    top: 0;
-    margin-top: 0px;
     margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	top: 0;
 }
 
 .elm-main-content-ult {
     max-width: 100%;
 }
 
-.elm-content-footer-ult::before{
+.elm-content-footer-ult::before {
     height: 0!important;
 }
 
@@ -317,6 +317,7 @@ h2.ult {
     position: absolute;
     top: 70px;
 }
+
 @media all and (min-width: 37.5em) {
     .search-bar-ult {
         top: 70px;
