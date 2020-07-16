@@ -452,13 +452,9 @@ ol.elm-meta-article-navigation {
     color: #80858C !important;
 }
 
-.mt-feedback-form {
-    display: unset !important;;
-}
-
 fieldset.ui-dform-fieldset {
-    border: 0px;
     background: unset;
+	border: 0px;
     padding: 0px;
 }
 
@@ -471,15 +467,15 @@ button.mt-feedback-button {
 }
 
 label.mt-feedback-consent-label {
-    width: 90%;
     color: #686E76;
+	width: 90%;
 }
 
 .see-more-list-ult .flex-column {
     margin-bottom: 2rem;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 35%;
-            flex: 0 35%;
+    -webkit-box-flex: 0 35%;
+        	-ms-flex: 0 35%;
+            	flex: 0 35%;
 }
 
 .see-more-list-ult .card-block {
@@ -619,12 +615,8 @@ label.mt-feedback-consent-label {
     }
 }
 
-/* BEST PRACTICES*/
-.columbia-breadcrumb-home-documentation-bestpractices nav.elm-header-global-nav.elm-nav {
-    display: none;
-    visibility: hidden;
-}
-
+/* BEST PRACTICES */
+.columbia-breadcrumb-home-documentation-bestpractices nav.elm-header-global-nav.elm-nav,
 .columbia-breadcrumb-home-documentation-bestpractices .elm-content-container header {
     display: none;
     visibility: hidden;
@@ -634,12 +626,8 @@ label.mt-feedback-consent-label {
     margin-top: 0px !important;
 }
 
-/* HOW TO GUIDE*/
-.columbia-breadcrumb-home-documentation-how-toguides nav.elm-header-global-nav.elm-nav {
-    display: none;
-    visibility: hidden;
-}
-
+/* HOW TO GUIDES */
+.columbia-breadcrumb-home-documentation-how-toguides nav.elm-header-global-nav.elm-nav,
 .columbia-breadcrumb-home-documentation-how-toguides .elm-content-container header {
     display: none;
     visibility: hidden;
