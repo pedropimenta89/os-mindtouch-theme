@@ -12,18 +12,18 @@ h2.ult {
 }
 
 .width-container-ult {
-    position: relative;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 2.2rem;
     padding-bottom: 4.5rem;
-    max-width: 1110px;
-    margin: auto;
+    position: relative;
+	margin: auto;
+	max-width: 1110px;
 }
 
 .input-ult::-webkit-input-placeholder {
@@ -72,8 +72,8 @@ h2.ult {
 }
 
 .center-search {
-    max-width: 50%;
     margin: auto;
+	max-width: 50%;
 }
 
 .flex-column {
