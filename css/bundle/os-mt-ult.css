@@ -756,9 +756,25 @@ label.mt-feedback-consent-label {
     	display: inline-block;
     }
 
+    .mt-feedback-rating-item {
+    	display: inline-block;
+    	font-size: 14px !important;
+    	margin-top: 0;
+    }
+
     .mt-feedback-rating-item.mt-rating-yes,
     .mt-feedback-rating-item.mt-rating-no {
     	float: none;
     	margin-left: 16px;
+    }
+
+    .mt-feedback-rating-item.mt-rating-yes > button,
+    .mt-feedback-rating-item.mt-rating-no > button,
+    #feedback-link-wrapper {
+    	font-size: 14px !important;
+    }
+
+    #feedback-link-wrapper {
+    	margin-top: 1.5rem;
     }
 }
