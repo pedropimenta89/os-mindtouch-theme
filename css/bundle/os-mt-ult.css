@@ -7,8 +7,8 @@ h2.ult {
 }
 
 .home-header-ult {
-    margin-top: 0;
     background-color: #f5f6fa;
+	margin-top: 0;
 }
 
 .width-container-ult {
@@ -47,15 +47,15 @@ h2.ult {
 }
 
 .vertical-bar {
-    height: 1.4rem;
-    position: absolute;
     border: 1px solid #b9b9b9;
-    top: 23%;
+	height: 1.4rem;
     left: 2.1rem;
+	position: absolute;
+    top: 23%;
 }
 
 .input-wrapper-ult {
-    position: relative
+    position: relative;
 }
 
 .background-ult {
