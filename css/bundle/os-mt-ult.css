@@ -775,6 +775,6 @@ label.mt-feedback-consent-label {
     }
 
     #feedback-link-wrapper {
-    	margin-bottom: 1.5rem;
+    	margin: 1.5rem 0;
     }
 }
