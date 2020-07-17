@@ -306,6 +306,18 @@ h2.ult {
     display: block;
 }
 
+.mt-feedback-rating-item.mt-last-rating-date {
+	float: right;
+}
+
+.mt-field {
+	display: inline-block;
+}
+
+.mt-feedback-form > fieldset .mt-field:nth-child(2) {
+	width: 100%;	
+}
+
 .wiki-tree * {
     font-size: 14px !important;
     font-family: 'NotoSans', sans-serif;
@@ -750,10 +762,6 @@ label.mt-feedback-consent-label {
     .card {
         margin-bottom: 0;
         padding-bottom: 2.5rem;
-    }
-	
-	.mt-feedback-rating-item {
-    	display: inline-block;
     }
 
     .mt-feedback-rating-item {
