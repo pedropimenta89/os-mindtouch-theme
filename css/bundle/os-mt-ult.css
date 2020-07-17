@@ -308,6 +308,7 @@ h2.ult {
 
 .mt-feedback-rating-item.mt-last-rating-date {
 	float: right;
+	text-align: right;
 }
 
 .mt-feedback-form > fieldset .mt-field:nth-of-type(2) {
@@ -317,6 +318,7 @@ h2.ult {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding-top: 1.5rem;
 	width: 100%;	
 }
 
