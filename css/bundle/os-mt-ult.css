@@ -315,6 +315,12 @@ h2.ult {
 }
 
 .mt-feedback-form > fieldset .mt-field:nth-of-type(2) {
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	width: 100%;	
 }
 
