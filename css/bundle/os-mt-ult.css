@@ -310,10 +310,6 @@ h2.ult {
 	float: right;
 }
 
-.mt-field:not(.mt-submit) {
-	display: inline-block;
-}
-
 .mt-feedback-form > fieldset .mt-field:nth-of-type(2) {
 	-webkit-box-align: baseline;
 	    -ms-flex-align: baseline;
