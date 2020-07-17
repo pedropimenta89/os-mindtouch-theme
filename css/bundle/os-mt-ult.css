@@ -310,11 +310,11 @@ h2.ult {
 	float: right;
 }
 
-.mt-field {
+.mt-field:not(.mt-submit) {
 	display: inline-block;
 }
 
-.mt-feedback-form > fieldset .mt-field:nth-child(2) {
+.mt-feedback-form > fieldset .mt-field:nth-of-type(2) {
 	width: 100%;	
 }
 
