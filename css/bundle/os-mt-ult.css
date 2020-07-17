@@ -411,7 +411,7 @@ ol.elm-meta-article-navigation {
     font-size: 12px;
 }
 
-.mt-toc-container-ult ol {
+.mt-toc-container-ult > nav > ol {
     border-left: 1px solid #DEDFE4;
     padding-left: 10px;
 }
