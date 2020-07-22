@@ -790,10 +790,10 @@ label.mt-feedback-consent-label {
 /* SUPPORT KB fixes */
 @media (min-width: 18.75em) {
 	:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
-		padding: 1em 1.25em;
+		padding: 0 0 0 1.5em;
 	}
 	
-	[class*=columbia-breadcrumb-home-documentation-10]:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing {
+	:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing {
 		padding: 0;
 	}
 }
