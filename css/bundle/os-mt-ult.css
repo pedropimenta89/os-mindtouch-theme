@@ -788,6 +788,24 @@ label.mt-feedback-consent-label {
 }
 
 /* SUPPORT KB fixes */
+[class*=columbia-breadcrumb-home-support] .mt-guide-tabs-container {
+	border: 1px solid #b4b4b4;
+}
+
+[class*=columbia-breadcrumb-home-support] .mt-guide-add-button-container {
+	background: #efefef;
+    border-bottom: 1px solid #30b3f6;
+}
+
+[class*=columbia-breadcrumb-home-support] .ui-tabs .ui-tabs-scroll-container {
+	background: #efefef;
+}
+
+[class*=columbia-breadcrumb-home-documentation-10] .ui-tabs .ui-tabs-nav {
+	background: 0 0;
+	border-bottom: 1px solid #30b3f6;
+
+
 @media (min-width: 18.75em) {
 	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
 		padding: 0 0 0 1.5em;
