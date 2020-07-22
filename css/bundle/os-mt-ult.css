@@ -789,34 +789,48 @@ label.mt-feedback-consent-label {
 
 /* SUPPORT KB fixes */
 @media (min-width: 18.75em) {
-	:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
+	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
 		padding: 0 0 0 1.5em;
 	}
 	
-	:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing {
+	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing {
 		padding: 0;
 	}
 }
 
 @media (min-width: 37.5em) {
-	:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing {
+	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing {
 		padding: 10px 20px;
 	}
 }
 
-:not([class*=columbia-breadcrumb-home-support]) .evaluation-kb li.mt-sortable-listing {
-    position: relative;
+@media (min-width: 80em) {
+    [class*=columbia-breadcrumb-home-support] dt.mt-listing-detailed-title {
+    	font-size: 14px;
+    	margin: unset;
+    	margin-bottom: .25em;
+    }
+}
+
+[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing {
+    background: 0 0;
+    border: 1px dashed #656565;
+    border-radius: .5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #000 !important;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 50em;
-            flex: 1 1 50em;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 3px;
-    border-left-width: 3px;
-    border-left-style: solid;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -webkit-box-shadow: 1px 1px 5px #ddd;
-            box-shadow: 1px 1px 5px #ddd
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    float: none;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    min-width: 0;
+    padding: .5em;
+}
+
+[class*=columbia-breadcrumb-home-support] .mt-toggle-container.mt-lp-pages-container {
+    border: 0;
+    border-radius: .25em;
+    padding: 0;
 }
