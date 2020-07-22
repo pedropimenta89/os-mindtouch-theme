@@ -3221,7 +3221,7 @@ body.body-with-sidebar {
     border-color: #706866
 }
 [class*=columbia-breadcrumb-home-documentation-10] .ui-tabs .ui-tabs-nav li.ui-state-active {
-    background: fff;
+    background: #fff;
     border-color: #ccc
 }
 [class*=columbia-breadcrumb-home-documentation-10] .ui-tabs .ui-tabs-nav li.ui-state-active+.mt-guide-tab:hover {
