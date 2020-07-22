@@ -804,7 +804,7 @@ label.mt-feedback-consent-label {
 [class*=columbia-breadcrumb-home-documentation-10] .ui-tabs .ui-tabs-nav {
 	background: 0 0;
 	border-bottom: 1px solid #30b3f6;
-
+}
 
 @media (min-width: 18.75em) {
 	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
