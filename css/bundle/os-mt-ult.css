@@ -806,6 +806,10 @@ label.mt-feedback-consent-label {
 	border-bottom: 1px solid #30b3f6;
 }
 
+[class*=columbia-breadcrumb-home-support] .ui-tabs .ui-tabs-nav li.ui-state-active {
+	border-color: #30b3f6;
+}
+
 @media (min-width: 18.75em) {
 	[class*=columbia-breadcrumb-home-support] .evaluation-kb li.mt-sortable-listing .mt-listing-detailed {
 		padding: 0 0 0 1.5em;
