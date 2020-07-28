@@ -408,6 +408,11 @@ i.jstree-icon.jstree-themeicon {
   height: 24px;
   line-height: 24px;
 }
+.sidebar-ult .jstree-default .jstree-icon:empty {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
 .jstree-default.jstree-rtl .jstree-node {
   margin-right: 24px;
 }
