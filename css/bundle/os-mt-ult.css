@@ -563,14 +563,14 @@ label.mt-feedback-consent-label {
     }
 
     .elm-content-footer-ult-fixed {
-        position: fixed !important;
-        top: 0;
-        right: 6%;
         margin-top: unset !important;
+		position: fixed !important;
+        right: 6%;
+		top: 0;
     }
 	
 	.mt-toc-container-ult nav.mt-toc-content.mt-collapsible-section.mt-hide {
-    	max-height: calc(100vh - 480px);
+    	max-height: 25vh;
     	overflow-x: hidden;
 		overflow-y: auto;
 	}
