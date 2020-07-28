@@ -534,15 +534,14 @@ label.mt-feedback-consent-label {
     }
 
     .elm-main-content-ult {
-        max-width: 80%;
-        padding-left: 24%;
         margin-top: 3rem !important;
+		max-width: 80%;
+        padding-left: 24%;
     }
 
     .elm-article-feedback-ult {
         right: -380px;
         width: 200px;
-        border-bottom: 1px solid #C6C9CE;
     }
 
     .search-bar-ult > .form-field {
