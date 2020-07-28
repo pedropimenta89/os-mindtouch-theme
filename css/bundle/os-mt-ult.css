@@ -204,9 +204,9 @@ h2.ult {
 
 /* HOMEPAGE */
 .cards-list-ult>div {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 50%;
-            flex: 0 50%;
+-webkit-box-flex: 0;
+	-ms-flex: 0 50%;
+		flex: 0 50%;
 }
 
 .homepage-container-ult {
@@ -250,10 +250,10 @@ h2.ult {
 
 @media all and (min-width: 50em) {
     .cards-list-ult {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
     }
 
     .card-mr-2 {
@@ -380,7 +380,7 @@ li[aria-expanded=true]>a.jstree-anchor {
 }
 
 
-.jstree-default .jstree-closed>.jstree-ocl:before {
+.jstree-default .jstree-closed > .jstree-ocl:before {
     content: '+';
     font-weight: 400;
     color: #80858C;
@@ -388,7 +388,7 @@ li[aria-expanded=true]>a.jstree-anchor {
     top: -4px;
 }
 
-.jstree-default .jstree-open>.jstree-ocl:before {
+.jstree-default .jstree-open > .jstree-ocl:before {
     content: '-';
     font-weight: 400;
     color: #80858C;
@@ -566,6 +566,12 @@ label.mt-feedback-consent-label {
         right: 6%;
         margin-top: unset !important;
     }
+	
+	.mt-toc-container-ult nav.mt-toc-content.mt-collapsible-section.mt-hide {
+    	max-height: calc(100vh - 480px);
+    	overflow-x: hidden;
+		overflow-y: auto;
+	}
 
     .mt-toc-container-ult li:before {
         content: unset !important;
