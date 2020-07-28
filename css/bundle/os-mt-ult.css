@@ -406,13 +406,12 @@ ol.elm-meta-article-navigation {
 }
 
 .mt-toc-container-ult {
-    display: block !important;
-    padding: 0px !important;
     background-color: #fff !important;
     border: 0px !important;
-    margin: 15px 0px 15px 0px !important;
+	float: unset !important;
+	margin: 15px 0px 15px 0px !important;
     max-width: 220px !important;
-    float: unset !important;
+	padding: 0px !important;
 }
 
 .mt-toc-container-ult button {
