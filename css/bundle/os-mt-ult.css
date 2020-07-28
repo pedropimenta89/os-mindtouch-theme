@@ -550,10 +550,10 @@ label.mt-feedback-consent-label {
     }
 
     .search-bar-ult {
-        left: -1em;
-		padding-left: 0;
-		top: 0;
-		width: 25%;
+        left: -1.5em;
+	padding-left: 0;
+	top: 0;
+	width: 25%;
     }
 
     .elm-content-footer-ult {
