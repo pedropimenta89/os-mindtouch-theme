@@ -521,17 +521,18 @@ label.mt-feedback-consent-label {
     }
 
     .sidebar-ult {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        overflow: auto;
-        padding-left: 9%;
-        width: 23%;
-        overflow-x: hidden;
-        z-index: 10;
-    }
+		bottom: 0;
+		display: block;
+		left: 0;
+		margin-top: 5em;
+		overflow: auto;
+		overflow-x: hidden;
+		padding-left: 9%;
+		position: absolute;
+		top: 0;
+		width: 23%;
+		z-index: 10;
+	}
 
     .elm-main-content-ult {
         margin-top: 3rem !important;
@@ -545,13 +546,14 @@ label.mt-feedback-consent-label {
     }
 
     .search-bar-ult > .form-field {
-        padding-left: 50px;
+        padding-left: 0;
     }
 
     .search-bar-ult {
-        width: 53%;
-        padding-left: 24%;
-        top: 117px;
+        left: -1em;
+		padding-left: 0;
+		top: 0;
+		width: 25;
     }
 
     .elm-content-footer-ult {
