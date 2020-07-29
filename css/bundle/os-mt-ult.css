@@ -785,6 +785,14 @@ label.mt-feedback-consent-label {
     #feedback-link-wrapper {
     	font-size: 14px !important;
     }
+	
+	.search-bar-ult {
+		margin: 1.5em 1em 1em;
+		padding: 0;
+		position: relative;
+		top: 0;
+		width: auto;
+	}
 }
 
 /* SUPPORT KB fixes
