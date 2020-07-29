@@ -687,6 +687,9 @@ label.mt-feedback-consent-label {
 	
 	[class*=columbia-breadcrumb-home-documentation-10] .elm-meta-top {
     	border-bottom: 1px solid #DEDFE4 !important;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
 	}
 	
 	.elm-article-feedback-ult {
