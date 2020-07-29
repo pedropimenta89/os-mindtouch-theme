@@ -569,12 +569,6 @@ label.mt-feedback-consent-label {
 		top: 0;
     }
 	
-	.mt-toc-container-ult nav.mt-toc-content.mt-collapsible-section.mt-hide {
-    	max-height: 25vh;
-    	overflow-x: hidden;
-		overflow-y: auto;
-	}
-
     .mt-toc-container-ult li:before {
         content: unset !important;
     }
