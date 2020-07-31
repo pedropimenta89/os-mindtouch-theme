@@ -401,8 +401,8 @@ li[aria-expanded=true]>a.jstree-anchor {
     z-index: 0 !important;
 }
 
-ol.elm-meta-article-navigation {
-    display: none !important;
+ol.elm-meta-article-navigation li.elm-article-pagination {
+    display: none;
 }
 
 .mt-toc-container-ult {
