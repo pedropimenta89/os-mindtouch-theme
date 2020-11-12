@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var mainMenuContainer;
     const allMenuContainers = $('.main-menu__container');
-    for(i = 0; i < allMenuContainers.length; i++) {
+    for(var i = 0; i < allMenuContainers.length; i++) {
       if(!allMenuContainers[i].classList.contains('main-footer')){
         mainMenuContainer = $(allMenuContainers[i]);
       }
