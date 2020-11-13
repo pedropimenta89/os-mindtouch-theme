@@ -357,7 +357,7 @@ font-weight: 400;
 height: 62px;
 line-height: 1.558;
 margin: 0;
-position: fixed;
+position: fixed !important; /* test menu in dev */
 top: 0;
 transform: translate3d(0, 0, 0);
 transition: transform 200ms ease-out;
