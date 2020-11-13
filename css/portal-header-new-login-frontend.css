@@ -676,16 +676,12 @@ margin: 0;
 
 .main-menu__container ul.main-menu__container__login__container2__list {
 font-size: 1em;
+line-height: 1.5; /* override mindtouch css */
 margin: 0 0 0 84px;
 }
 
 .main-menu__container ul.main-menu__container__login__container2__list li {
-color: #FDB515; /* override mindtouch css */
 margin-bottom: 24px;
-}
-
-.main-menu__container ul.main-menu__container__login__container2__list li.main-menu__container__login__container2__list__settings { /*override css*/
-margin-top: 12px;
 }
 
 .main-menu__container__login__container2__list .osicons-v2-dot-full {
@@ -697,8 +693,10 @@ transform: translateY(-6px);
 }
 
 .main-menu__container ul.main-menu__container__login__container2__list a,
-.main-menu__container ul.main-menu__container__login__container2__list a:visited {
+.main-menu__container ul.main-menu__container__login__container2__list a:visited,
+ul.main-menu__container__login__container2__list li i { /* override mindtouch css */
 color: #FDB515;
+line-height: 1.5; /* override css */
 }
 
 .main-menu__container__login__container2__list [class*="osicon"] {
@@ -1360,10 +1358,6 @@ header a.main-menu__container__community-login:hover {
   font-size: 1em;
 }
 
-main-menu__container__login__container2__user-email {
-  color: #979CA2;
-}
-
 .main-menu__container__login__container2__user-email,
 .main-menu__container ul.main-menu__container__login__container2__list {
   font-size: 0.778em;
@@ -1398,6 +1392,10 @@ main-menu__container__login__container2__user-email {
   width: auto;
 }
 
+.main-menu__container ul.main-menu__container__login__container2__list li.main-menu__container__login__container2__list__settings { 
+  margin-top: 12px;
+}
+
 .main-menu__container .main-menu__container__login__container2__list li:first-of-type {
   margin-right: 40px;
 }
@@ -1407,7 +1405,8 @@ main-menu__container__login__container2__user-email {
 }
 
 .main-menu__container ul.main-menu__container__login__container2__list a,
-.main-menu__container ul.main-menu__container__login__container2__list a:visited {
+.main-menu__container ul.main-menu__container__login__container2__list a:visited,
+ul.main-menu__container__login__container2__list li i  { /* override mindtouch css */
   color: #0077B3;
 }
 
