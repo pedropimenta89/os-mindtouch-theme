@@ -204,6 +204,7 @@ font-weight: 700;
 .main-menu__container button {
     background-color: transparent !important; /* override css mindtouch */
     border: none !important; /* override css mindtouch */
+    border-radius: 0; /* override css mindtouch */
     box-shadow: none !important; /* override css mindtouch */
     font-family: 'NotoSans', Arial, Helvetica, sans-serif;
     line-height: 1.55;
@@ -349,9 +350,11 @@ header.header-black .main-menu__container__search i {
 header.main-menu__container {
 box-shadow: inset 0 -1px 0 #ebebeb;
 box-sizing: border-box;
+display: flex;
 font-family: 'NotoSans', Arial, Helvetica, sans-serif;
 font-size: 18px;
 font-weight: 400;
+height: 62px;
 line-height: 1.558;
 margin: 0;
 position: fixed;
@@ -359,12 +362,6 @@ top: 0;
 transform: translate3d(0, 0, 0);
 transition: transform 200ms ease-out;
 width: 100%;
-z-index: 100; /* override hero-section container */
-}
-
-header.main-menu__container {
-display: flex;
-height: 62px;
 z-index: 200; /* override footer z-index */
 }
 
@@ -805,7 +802,9 @@ margin-left: 24px;
 /* Login - END */
 
 .main-menu__container__search_input_container input {
-font-family: 'NotoSans', Arial, Helvetica, sans-serif; /* override css */
+  border-radius: 0; /* override css mindtouch */
+  font-family: 'NotoSans', Arial, Helvetica, sans-serif; /* override css */
+  text-indent: 0; /* override css mindtouch */
 }
 
 .main-menu__container__search_input_container ::placeholder {
@@ -928,6 +927,7 @@ a.main-menu__item:link,
 a.main-menu__item:link:hover {
   color: #39414a;
   font-size: 1em;
+  line-height: 1.429;
 }
 
 .main-menu__submenu-content__panel {
@@ -1758,13 +1758,14 @@ header .mobile__content__card__list__title {
 
 .main-menu__container .menu-burger {
   align-items: center;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: transparent !important; /* override css mindtouch */
+  border: 1px solid transparent !important; /* override css mindtouch */
   color: #DEDFE4;
   display: flex;
   font-size: 0.7em;
   font-weight: 700;
   height: 62px;
+  padding: 0 15px 0 0;
   position: absolute;
   right: 0;
   text-transform: uppercase;
@@ -1788,7 +1789,7 @@ header .mobile__content__card__list__title {
   position: relative;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
-  width: 21px;
+  width: 12px;
 }
 
 .main-menu__container .menu-burger .nav-icon1 span {
