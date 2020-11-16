@@ -222,6 +222,11 @@ font-weight: 700;
 }
 }
 
+/* Z INDEX */
+/* DRIFT */
+.open__main-menu__overflow-hidden #drift-widget-container {
+  z-index: 190 !important;
+}
 
 /* START - HEADER DARK */
 
