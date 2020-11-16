@@ -2269,18 +2269,19 @@ a.main-menu__item:link[aria-expanded="true"] {
   border-bottom: 2px solid #f22800;
 }
 }
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-/* IE10+ CSS styles go here */
-.mobile__content__card__header__go-back::before {
-  top: 10px;
+  /* IE10+ CSS styles go here */
+  .mobile__content__card__header__go-back::before {
+    top: 10px;
+  }
 }
 
-@media (min-width: 992px) {
-.main-menu__submenu-content__panel li { /* IE fix */
-  display: list-item;
-}
-}
-
+@media all and (-ms-high-contrast: none) and (min-width: 992px), (-ms-high-contrast: active) and (min-width: 992px) {
+  /* IE10+ CSS styles go here */
+  .main-menu__submenu-content__panel li { /* IE fix */
+    display: list-item;
+  }
 }
 
 /* CSS Corrections for OS Header */
