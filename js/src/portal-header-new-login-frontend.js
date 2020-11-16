@@ -126,7 +126,7 @@ $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="t
       var elem = result[0]; // IT'S THE STATE PREVIOUS TO FUNCTION TO CLEAR 
 
       var elemExpand = result[1];
-      var mobileView = window.matchMedia('(max-width: 992px)');
+      var mobileView = window.matchMedia('(max-width: 991.98x)');
 
       if (mobileView.matches) {
         submenuMobileAnimation(elem, elemExpand);
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainMenuBurger = $('.main-menu__container .menu-burger');
     const mainMenuAnimationClass = 'main-menu__fade';
     const mainMenuHeight = mainMenuContainer.height();
-    const mobileView = window.matchMedia("(max-width: 992px)");
+    const mobileView = window.matchMedia("(max-width: 991.98px)");
     const html = $('html');
 
     if (mobileView.matches) {
