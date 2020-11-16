@@ -29,7 +29,7 @@ function closeSearch() {
 function openSearch() {
   var mainMenuSearchArea = $('.main-menu__container__search');
   var mainMenuLogoArea = $('.main-menu__container__background-mobile');
-  var mobileBreak = window.matchMedia('(max-width: 992px)');
+  var mobileBreak = window.matchMedia('(max-width: 991.98px)');
   var mainMenuSearchWidth;
 
   if (mobileBreak.matches) {
@@ -80,7 +80,7 @@ $(function(){
         const allMenuContainers = $('.main-menu__container');
         var mainMenuContainer;
         if( $(this).closest('.main-menu__container').hasClass('main-footer') ) { 
-          for(var i = 0; i < allMenuContainers.length; i++) {
+          for(i = 0; i < allMenuContainers.length; i++) {
             if(!allMenuContainers[i].classList.contains('main-footer')){
               mainMenuContainer = $(allMenuContainers[i]);
               mainMenuContainer.addClass('main-menu__fade');
@@ -110,12 +110,8 @@ $(function(){
         });
         }
         
-
-        var mobileView = window.matchMedia('(max-width: 992px)');
-
-        if (mobileView.matches) {
-          $('html').addClass('open__main-menu__overflow-hidden');
-        }
+        $('html').addClass('open__main-menu__overflow-hidden');
+        
       }
     }); // OPEN SUBMENUS
 });
@@ -178,15 +174,17 @@ function mainMenuState() {
   var expanded = $('.main-menu__item[aria-expanded="true"]');
   if (expanded.length > 0 && !$('.main-menu__container').hasClass('open__main-menu')) {
     $('.main-menu__container').addClass('open__main-menu');
+    $('html').addClass('open__main-menu__overflow-hidden');
   } else if (expanded.length < 1) {
     $('.main-menu__container').removeClass('open__main-menu');
+    $('html').removeClass('open__main-menu__overflow-hidden');
   }
 } //  THIS FUNCTION RUNS EVERYTIME THE OVERLAY IS CLICKED AND A SUBMENU IS OPENED
 // IN CASE THE OVERLAY IS CLICKED IT WILL CLOSE THE MENU
 // THE RETURN IS TO PASS THE PREVIOUS VALUES TO THE THEN FUNCTION (BEFORE THE CLEANING)
 
 function clearOpenSubmenu(elem, elemExpand) {
-  var mobileView = window.matchMedia('(max-width: 992px)');
+  var mobileView = window.matchMedia('(max-width: 991.98px)');
 
   if (elem == 'main-menu__overlay') {
     $('.main-menu__container').removeClass('open__main-menu');
@@ -222,10 +220,10 @@ function clearOpenSubmenu(elem, elemExpand) {
 
 var resetMenuOnMobile = false;
 function cleanInlineMainMenu() {
-  var width993 = window.matchMedia('(min-width: 993px)');
+  var width992 = window.matchMedia('(min-width: 992px)');
   
 
-  if (width993.matches && $('.main-menu__container__nav-content').length > 0 && $('.main-menu__container__nav-content')[0].hasAttribute('style')) {
+  if (width992.matches && $('.main-menu__container__nav-content').length > 0 && $('.main-menu__container__nav-content')[0].hasAttribute('style')) {
     $('.main-menu__container__nav-content')[0].removeAttribute('style');
     $('.menu-burger').removeClass('open__main-menu');
     $('.main-menu__container').removeClass('open__main-menu');
@@ -243,14 +241,15 @@ function cleanInlineMainMenu() {
     if($('.mobile__content__card').hasClass('show')) {
       $( ".mobile__content__card__header__go-back" ).trigger( "click" );
     }
-
-    if ($('html').hasClass('open__main-menu__overflow-hidden')) {
-      $('html').removeClass('open__main-menu__overflow-hidden');
-    }
+    
   } else if($('.main-menu__container__search_input_container').length > 0) {
       if($('.main-menu__container__search_input_container')[0].hasAttribute('style')){
         $('.main-menu__container__search_input_container').removeAttr('style');
     }
+  }
+  
+  if ($('html').hasClass('open__main-menu__overflow-hidden')) {
+    $('html').removeClass('open__main-menu__overflow-hidden');
   }
 }
 
@@ -311,7 +310,7 @@ if (typeof $("header.main-header .main-menu__container.main-menu__container__onl
   });
 }
 
-var mobileView = window.matchMedia('(max-width: 992px)');
+var mobileView = window.matchMedia('(max-width: 991.98px)');
 
 $(function(){
     var mobileMenuItem = document.querySelectorAll('.mobile__menu__item');
@@ -381,7 +380,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var mainMenuContainer;
     const allMenuContainers = $('.main-menu__container');
-    for(var i = 0; i < allMenuContainers.length; i++) {
+    for(i = 0; i < allMenuContainers.length; i++) {
       if(!allMenuContainers[i].classList.contains('main-footer')){
         mainMenuContainer = $(allMenuContainers[i]);
       }
