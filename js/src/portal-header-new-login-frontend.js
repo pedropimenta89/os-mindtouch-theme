@@ -126,7 +126,7 @@ $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="t
       var elem = result[0]; // IT'S THE STATE PREVIOUS TO FUNCTION TO CLEAR 
 
       var elemExpand = result[1];
-      var mobileView = window.matchMedia('(max-width: 991.98x)');
+      var mobileView = window.matchMedia('(max-width: 991.98px)');
 
       if (mobileView.matches) {
         submenuMobileAnimation(elem, elemExpand);
