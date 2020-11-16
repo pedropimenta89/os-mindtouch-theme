@@ -1,3 +1,7 @@
+.elm-header-user-nav {
+  display: none;
+}
+
 /* START - Extra CSS */
 [class*="osicons-v2"] {
   display: inline-block;
