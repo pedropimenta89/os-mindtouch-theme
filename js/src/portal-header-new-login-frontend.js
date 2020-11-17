@@ -262,7 +262,7 @@ var keys = {
   down: 40,
   esc: 27
 };
-var appsMenuItems = document.querySelectorAll("header.main-menu__item");
+var appsMenuItems = document.querySelectorAll("header .main-menu__item");
 var appsMenuItemsLenght = appsMenuItems.length;
 Array.prototype.forEach.call(appsMenuItems, function (el, i) {
   el.addEventListener("keydown", function (event) {
