@@ -277,10 +277,8 @@ Array.prototype.forEach.call(appsMenuItems, function (el, i) {
         if ($(this).attr('aria-expanded') == 'true') {
           $(this).click();
         }
-
-        if( (i == appsMenuItemsLenght - 2 && document.querySelector('.main-menu__container__login__link')) || (document.querySelector('.main-menu__container__login__link2') == null && i == appsMenuItemsLenght - 1) ) {
-          $('.main-menu__container__search_open').focus();
-        }
+        
+        $('.main-menu__container__search_open').focus();
         
         break;
     }
