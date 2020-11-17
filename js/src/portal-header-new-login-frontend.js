@@ -263,7 +263,6 @@ var keys = {
   esc: 27
 };
 var appsMenuItems = document.querySelectorAll("header .main-menu__item");
-var appsMenuItemsLenght = appsMenuItems.length;
 Array.prototype.forEach.call(appsMenuItems, function (el, i) {
   el.addEventListener("keydown", function (event) {
     switch (event.keyCode) {
@@ -278,7 +277,7 @@ Array.prototype.forEach.call(appsMenuItems, function (el, i) {
           $(this).click();
         }
         
-        $('.main-menu__container__search_open').focus();
+        //$('.main-menu__container__search_open').focus();
         
         break;
     }
