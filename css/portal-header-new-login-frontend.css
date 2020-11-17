@@ -1946,7 +1946,8 @@ header .mobile__content__card__header {
   padding: 20px 15px 16px 15px;
 }
 
-header .mobile__content__card__header__go-back {
+header .mobile__content__card__header__go-back,
+header .mobile__content__card__header__go-back:hover { /* overrride mindtouch css */
   background: transparent;
   border: none;
   color: #fff;
