@@ -262,7 +262,8 @@ var keys = {
   down: 40,
   esc: 27
 };
-var appsMenuItems = document.querySelectorAll(".main_menu__list > li > a");
+var appsMenuItems = document.querySelectorAll("header.main-menu__item");
+var appsMenuItemsLenght = appsMenuItems.length;
 Array.prototype.forEach.call(appsMenuItems, function (el, i) {
   el.addEventListener("keydown", function (event) {
     switch (event.keyCode) {
@@ -277,7 +278,10 @@ Array.prototype.forEach.call(appsMenuItems, function (el, i) {
           $(this).click();
         }
 
-        $('.main-menu__container__search_open').focus();
+        if( (i == appsMenuItemsLenght - 2 && document.querySelector('.main-menu__container__login__link')) || (document.querySelector('.main-menu__container__login__link2') == null && i == appsMenuItemsLenght - 1) ) {
+          $('.main-menu__container__search_open').focus();
+        }
+        
         break;
     }
   });
