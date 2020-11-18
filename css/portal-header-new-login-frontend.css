@@ -1,6 +1,13 @@
-/*.elm-header-user-nav {
+/*
+Test in Dev Env
+.elm-header-user-nav {
   display: none;
-}*/
+}
+
+header.main-menu__container {
+position: fixed !important;
+}
+*/
 
 /* START - Extra CSS */
 [class*="osicons-v2"] {
@@ -366,7 +373,7 @@ font-weight: 400;
 height: 62px;
 line-height: 1.558;
 margin: 0;
-position: fixed !important; /* test menu in dev */
+position: fixed;
 top: 0;
 transform: translate3d(0, 0, 0);
 transition: transform 200ms ease-out;
@@ -1650,6 +1657,10 @@ header .main-menu__submenu-content__panel + .main-menu__submenu-content__panel {
   order: 1;
   overflow: auto;
 }
+  
+.main-menu__container--no-search .mobile__menu__container__center {
+  height: calc(100% - 75px);
+}
 
 .main-menu__container--nav-overflow-hidden .mobile__menu__container__center {
   overflow: hidden;
@@ -1693,7 +1704,7 @@ a.mobile__menu__item_solo:visited {
 
 .mobile__content__card {
   background-color: #0a141e;
-  height: calc(100% - 147px); /* prevent jump on swipe */
+  height: calc(100% - 146px); /* prevent jump on swipe */
   overflow: auto;
   padding-bottom: 30px;
   position: absolute;
@@ -1702,6 +1713,11 @@ a.mobile__menu__item_solo:visited {
   transition: 400ms ease all;
   width: 100%;
   z-index: 1;
+}
+  
+.main-menu__container--no-search .mobile__content__card {
+  height: calc(100% - 75px);
+  top: 0;
 }
 
 header .mobile__content__card {
@@ -2000,23 +2016,46 @@ header .mobile__content__card__header__go-back-span {
 .main-menu__container--community-links .mobile__menu__container__center {
    height: calc(100% - 212px); 
 }
+  
+.main-menu__container--community-links.main-menu__container--no-search .mobile__menu__container__center {
+   height: calc(100% - 140px); 
+}
 
 .main-menu__container--logged-in .mobile__menu__container__center {
    height: calc(100% - 197px); 
+}
+  
+.main-menu__container--logged-in.main-menu__container--no-search .mobile__menu__container__center {
+   height: calc(100% - 128px); 
 }
 
 .main-menu__container--community-links .mobile__content__card {
   height: calc(100% - 144px);
   z-index: 3;
 }
+  
+.main-menu__container--community-links.main-menu__container--no-search .mobile__content__card {
+  height: calc(100% - 75px);
+  top: 0;
+}
 
 .main-menu__container--logged-in .mobile__content__card {
   height: calc(100% - 135px);
+}
+  
+.main-menu__container--logged-in.main-menu__container--no-search .mobile__content__card {
+  height: calc(100% - 64px);
+  top: 0; 
 }
 
 .main-menu__container--logged-in .main-menu__container__login__container2.mobile__content__card {
   height: calc(100% - 70px);
   top: 70px; 
+}
+  
+.main-menu__container--logged-in.main-menu__container--no-search .main-menu__container__login__container2.mobile__content__card {
+  height: 100%;
+  top: 0; 
 }
 
 .main-menu__container--logged-in .main-menu__container__right {
