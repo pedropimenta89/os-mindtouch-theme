@@ -1,12 +1,12 @@
 
-/*Test in Dev Env 
+/*Test in Dev Env */
 .elm-header-user-nav {
   display: none;
 }
 
 header.main-menu__container {
 position: fixed !important;
-}*/
+}
 
 /* START - Extra CSS */
 [class*="osicons-v2"] {
