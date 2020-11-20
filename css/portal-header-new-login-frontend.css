@@ -2432,3 +2432,86 @@ a.os-btn-light:disabled {
   align-items: center;
   margin-right: 10px;
 }
+
+/* CSS to adjust Header in MindTouch */
+header .main-menu__container__search_open:hover,
+.main-menu__container__search button:hover {
+background-color: transparent;
+border-color: transparent;
+box-shadow: none;
+}
+
+.columbia-breadcrumb-home-enablement-partnerguide header ul {
+padding: 0!important; /* importanto to overlap old css */
+}
+
+[class*=columbia-breadcrumb-home-support]:not(.elm-user-pro-edit) .hero-wrapper {
+margin-top: 60px;
+}
+
+/* CALL TO ACTION = START */
+.call-to-action {
+display: flex;
+align-items: center;
+margin-right: 10px;
+}
+.call-to-action input,
+.call-to-action input:hover,
+.call-to-action .Button:hover  {
+padding: 0px 16px;
+border-radius: 4px;
+font-weight: bold;
+font-size: 13px;
+line-height: 13px;
+text-transform: none;
+height: 32px;
+min-height: 32px;
+}
+.call-to-action .button-gold,
+.call-to-action .Button.button-gold {
+background: linear-gradient(180deg, #FDB515 0%, #FDB515 100%);
+border: 1px solid #FDB515;
+box-shadow: 0px 0.2px 0.5px rgba(32, 35, 39, 0.08), 0px 0.6px 2.5px rgba(32, 35, 39, 0.17);
+color: #202327;
+}
+.call-to-action .button-gold:hover,
+.call-to-action .Button.button-gold:hover,
+.call-to-action .button-gold:active,
+.call-to-action .button-gold.ButtonDefault:hover, 
+.call-to-action .button-gold.Is_Default:hover,
+.call-to-action .Button.button-gold:active,
+.call-to-action .Button.button-gold.ButtonDefault:hover, 
+.call-to-action .Button.button-gold.Is_Default:hover {
+background: linear-gradient(180deg, #FED06B 0%, #FED06B 100%);
+background-color: transparent;
+box-shadow: 0px 0.2px 0.5px rgba(32, 35, 39, 0.08), 0px 0.6px 2.5px rgba(32, 35, 39, 0.17);
+border: 1px solid #FED06B;
+color: #202327;
+}
+.call-to-action .button-blue,
+.call-to-action .Button.button-blue {
+background: linear-gradient(180deg, #0077B3 0%, #0077B3 100%);
+border: 1px solid #0077B3;
+box-shadow: 0px 1px 1px rgba(169, 177, 184, 0.2);
+color: #FFF;
+}
+.call-to-action .button-blue:hover,
+.call-to-action .button-blue:active,
+.call-to-action .button-blue.ButtonDefault:hover, 
+.call-to-action .button-blue.Is_Default:hover,
+.call-to-action .Button.button-blue:hover,
+.call-to-action .Button.button-blue:active,
+.call-to-action .Button.button-blue.ButtonDefault:hover, 
+.call-to-action .Button.button-blue.Is_Default:hover{
+background: linear-gradient(180deg, #38BDFF 0%, #38BDFF 100%);
+border: 1px solid #38BDFF;
+background-color: transparent;
+box-shadow: 0px 1px 1px rgba(169, 177, 184, 0.2);
+color: #FFF;
+}
+@media (max-width: 992px) {
+.call-to-action {
+display: none;
+}
+}
+/* CALL TO ACTION - END */
