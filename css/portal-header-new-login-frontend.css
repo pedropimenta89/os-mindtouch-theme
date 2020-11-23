@@ -1197,6 +1197,7 @@ header a.main-menu__container__community-login:hover {
 }
 
 .main-menu__container__login__link:hover,
+.main-menu__container__login__link[aria-expanded="true"]:focus,
 .main-menu__container__login__link[aria-expanded="true"] {
   background-color: #39414A; 
   border-radius: 4px;
