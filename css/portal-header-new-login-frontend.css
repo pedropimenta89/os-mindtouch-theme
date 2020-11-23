@@ -1189,14 +1189,11 @@ header a.main-menu__container__community-login:hover {
 
 .main-menu__container__login__link {
   padding: 14px;
+  transition: 150ms ease all;
 }
 
 .main-menu__container--logged-in .main-menu__container__login__link {
   padding: 4px 4px 10px 10px;
-}
-  
-.main-menu__container__login__link {
-  transition: 150ms ease all;
 }
 
 .main-menu__container__login__link:hover,
