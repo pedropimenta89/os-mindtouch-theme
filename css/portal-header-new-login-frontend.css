@@ -1196,8 +1196,9 @@ header a.main-menu__container__community-login:hover {
   padding: 4px 4px 10px 10px;
 }
 
-.main-menu__container__login__link:hover,
-.main-menu__container__login__link[aria-expanded="true"]:focus,
+.main-menu__container__login__link:hover, 
+.main-menu__container__login__link:hover:focus, /* override mindtouch */
+.main-menu__container__login__link[aria-expanded="true"]:focus, /* override mindtouch */
 .main-menu__container__login__link[aria-expanded="true"] {
   background-color: #39414A; 
   border-radius: 4px;
