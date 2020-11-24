@@ -223,6 +223,7 @@ font-weight: 400;
 .main-menu__container__container-os h6 {
 font-family: 'Cabin', Arial, Helvetica, sans-serif;
 font-weight: 700;
+line-height: 1.5;
 }
 
 .main-menu__container button {
