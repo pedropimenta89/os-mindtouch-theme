@@ -1885,7 +1885,7 @@ header .main-menu__container__search_open:hover,
   .mobile__content__card__header button:hover, 
   .mobile__content__card__header button:active {
     background-color: transparent;
-    color: inherit;
+    color: #fff;
     border: none;
     box-shadow: none;
   }
