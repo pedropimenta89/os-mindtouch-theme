@@ -8,7 +8,6 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 1;
     speak: none;
     text-transform: none;
     vertical-align: middle;
@@ -1812,6 +1811,11 @@ a.os-btn-light:disabled {
 }
 
 /* CSS to adjust Header in MindTouch */
+
+.main-menu__container li {
+    font-size: inherit !important;
+}
+
 header .main-menu__container__search_open:hover,
 .main-menu__container__search button:hover {
   background-color: transparent;
