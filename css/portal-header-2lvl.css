@@ -927,6 +927,7 @@ h6.main-menu__submenu-content__title {
   
   .main-menu__container__search_cancel {
       font-size: 1.07em;
+      line-height: 1;
   }
 
   .main-menu__container__search_confirm {
@@ -1813,6 +1814,7 @@ a.os-btn-light:disabled {
 /* CSS to adjust Header in MindTouch */
 
 .main-menu__container li {
+    font-family: 'Cabin', Arial, Helvetica, sans-serif !important;
     font-size: inherit !important;
 }
 
