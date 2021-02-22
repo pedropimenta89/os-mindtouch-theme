@@ -1818,6 +1818,11 @@ a.os-btn-light:disabled {
     font-size: inherit !important;
 }
 
+header .main-menu__container__search_open:hover, 
+.main-menu__container__search button:hover {
+    border: none !important;
+}
+
 header .main-menu__container__search_open:hover,
 .main-menu__container__search button:hover {
   background-color: transparent;
