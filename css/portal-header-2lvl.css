@@ -1870,6 +1870,12 @@ header .main-menu__container__search_open:hover,
   .main-menu__call-to-action {
     margin: 0 16px 0 8px;
   }
+    
+  .main-menu__container__second-nav__list a.main-menu__container__second-nav__link:visited:hover, 
+  a.main-menu__container__second-nav__link:hover, 
+  a.main-menu__container__second-nav__link:link:hover { 
+    text-decoration: underline !important;
+  }
 }
 
 @media (max-width: 991.98px) { 
