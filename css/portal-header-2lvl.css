@@ -1813,6 +1813,10 @@ a.os-btn-light:disabled {
 
 /* CSS to adjust Header in MindTouch */
 
+.main-menu__container * {
+ font-family: 'Cabin', Arial, Helvetica, sans-serif;
+}
+
 .main-menu__container li {
     font-family: 'Cabin', Arial, Helvetica, sans-serif !important;
     font-size: inherit !important;
