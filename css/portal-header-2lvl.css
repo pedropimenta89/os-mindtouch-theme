@@ -1909,3 +1909,13 @@ header .main-menu__container__search_open:hover,
  
 }
 
+.elm-user-pro-edit header.main-menu__container { 
+  position: fixed;
+}
+
+.elm-user-pro-member .elm-header-user-nav,
+nav.elm-nav.elm-header-notice.ux-policy {
+    display: none;
+}
+
+
