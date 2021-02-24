@@ -438,6 +438,7 @@ header.main-menu__container {
 }
 
 .main-menu__container .os-btn-light:hover, 
+.main-menu__container .os-btn-light:focus, 
 .main-menu__container .os-btn-light:visited:hover { 
   background-color: #C6C9CE;
   color: #0A141E;
@@ -1906,6 +1907,8 @@ input[type=submit].main-menu__call-to-action__btn { /* override css */
 
 input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
   background-color: #D99B11; 
+  border: none;
+  box-shadow: none;
 }
 
 @media (min-width: 992px) { 
