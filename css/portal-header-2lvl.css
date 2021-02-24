@@ -1,6 +1,6 @@
 /* OSICONS v2 */
 /* START - Extra CSS */
-[class*="osicons-v2"] {
+[class*='osicons-v2'] {
     display: inline-block;
     font-family: osicons-v2 !important;
     -webkit-font-smoothing: antialiased;
@@ -10,7 +10,7 @@
     font-weight: 400;
     speak: none;
     text-transform: none;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .osicons-v2-fb-brand:before,
