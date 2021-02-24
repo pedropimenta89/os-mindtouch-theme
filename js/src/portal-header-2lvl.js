@@ -52,7 +52,7 @@ $(document).on('click', '.main-menu__overlay', function clickOverlay() {
   clearOpenSubmenu('main-menu__overlay');
 }); // ////////////////////////////////////
 // MENU BURGUER
-$(function(){
+// $(function(){
     // var burguerButton = $('.main-menu__container .menu-burger > span');
 
     $(document).on('click', '.main-menu__container .menu-burger', function clickMenuBurger() {
@@ -118,7 +118,7 @@ $(function(){
         }
       }
     }); // OPEN SUBMENUS
-});
+//});
 
 $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="true"], .main-menu__container__dropdown button[aria-expanded]', function clickShowSubmenus() {
   var elem = $(this); // SAVE THE VALUES BEFORE THE CLEAN OPEN SUBMENU FUNCTION{
