@@ -180,9 +180,6 @@ header a:visited {
 }
 /* END - Extra CSS */
 
-
-[class*="os-btn"].font-size-s,
-[class*="os-btn"].font-size-s:visited,
 .font-size-s {font-size: 0.875rem;}
 
 .margin-left-s {margin-left: 0.5rem;} /*8px*/
@@ -267,24 +264,6 @@ header.header-black a.text-yellow:visited {
 
 header.header-black a.text-yellow:hover {
   color: #fed06b;
-}
-
-header.header-black .os-btn-light,
-header.header-black .os-btn-light:visited {
-  color: #0a141e;
-}
-
-header.header-black .os-btn-light:hover,
-header.header-black .os-btn-light:visited:hover {
-  color: #0A141E;
-  background-color: #C6C9CE;
-}
-
-header.header-black [class*="os-btn"].btn-small,
-header.header-black [class*="os-btn"].btn-small:visited {
-  font-size: 14px;
-  height: 2rem;
-  padding: 0 8px;
 }
 
 header.header-black .main-menu__container__section {
@@ -440,6 +419,30 @@ header.main-menu__container {
   box-shadow: 0 3px 0 -1px #F22800;
 }
 
+.main-menu__container .os-btn-light, 
+.main-menu__container .os-btn-light:visited {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: #0a141e;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 0.5em 0.875em;
+    transition: all 200ms ease;
+    white-space: nowrap;
+}
+
+.main-menu__container .os-btn-light:hover, 
+.main-menu__container .os-btn-light:visited:hover { 
+  background-color: #C6C9CE;
+  color: #0A141E;
+}
+
 /* Login - START */
 .main-menu__container div.header-info {
   align-items: center;
@@ -592,7 +595,6 @@ header .header-info .header-icon {
   margin-left: 11px;
 }
 /* Login - END */
-
 
 header .main-menu__container__section {
   align-items: center;
@@ -1782,58 +1784,6 @@ h6.main-menu__submenu-content__title {
 
 /* CSS Corrections for OS Header */
 
-/* Button Default */
-[class*="os-btn"],
-[class*="os-btn"]:visited {
-    align-items: center;
-    background-color: #0a141e;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: 'Cabin', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    height: var(--space-xl);
-    justify-content: center;
-    padding: 0 1em;
-    transition: all 200ms ease;
-    white-space: nowrap;
-}
-
-[class*="os-btn"]:hover {
-    background-color: #39414a;
-    text-decoration: none;
-}
-
-[class*="os-btn"].disabled,
-[class*="os-btn"]:disabled {
-    cursor: default;
-}
-
-/* Button Light */
-.os-btn-light,
-.os-btn-light:visited {
-    background-color: #fff;
-    color: #0a141e;
-    font-family: 'Notosans';
-    font-size: 1em;
-    line-height: 1.5;
-    padding: 0.5em 0.875em;
-}
-
-.os-btn-light:hover,
-a.os-btn-light:hover {
-    background-color: #fff;
-    color: #db2400;
-}
-
-.os-btn-light.disabled,
-a.os-btn-light:disabled {
-    background-color: #515860;
-    color: 0a141e;
-}
-
 .hidden-search {
   display: none;
 }
@@ -2001,6 +1951,11 @@ header .main-menu__container__search_open:hover,
  
 }
 
+/* DISTANCE BETWEEN CONTENT AND HEADER - MINDTOUCH */
+
+
+/* TEST IN DEV */
+
 .elm-user-pro-edit header.main-menu__container { 
   position: fixed;
 }
@@ -2009,5 +1964,4 @@ header .main-menu__container__search_open:hover,
 nav.elm-nav.elm-header-notice.ux-policy {
     display: none;
 }
-
 
