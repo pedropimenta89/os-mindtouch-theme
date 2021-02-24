@@ -1838,6 +1838,10 @@ header .main-menu__container__search_open:hover,
   margin: 0;
 }
 
+.main-menu__container__nav-content .main-menu__container__second-nav__link:hover  {
+    color:#DEDFE4;
+}
+
 .main-menu__container .os-btn-light span,
 .content__card__panel__link__text,
 .mobile__content__card__header__go-back-span { 
