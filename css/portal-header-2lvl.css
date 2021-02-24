@@ -14,38 +14,120 @@
 }
 
 .osicons-v2-fb-brand:before,
-.osicons-v2-fb:before {content: "\e900";}
+.osicons-v2-fb:before,
+.osicons-v2-facebook:before             {content: "\e900";}
 .osicons-v2-in-brand:before,
-.osicons-v2-in:before {content: "\e901";}
+.osicons-v2-in:before,
+.osicons-v2-linkedin:before             {content: "\e901";}
 .osicons-v2-tw-brand:before,
-.osicons-v2-tw:before {content: "\e902";}
-.osicons-v2-share:before {content: "\e903";}
-.osicons-v2-email:before {content: "\e904";}
-.osicons-v2-tag:before {content: "\e905";}
-.osicons-v2-cancel:before {content: "\e906";}
-.osicons-v2-chevron-down:before {content: "\e907";}
-.osicons-v2-search:before {content: "\e908";}
-.osicons-v2-valid:before {content: "\e90a";}
-.osicons-v2-hamburguer:before {content: "\e90b";}
-.osicons-v2-chevron-up:before {content: "\e90d";}
-.osicons-v2-chevron-left:before {content: "\e90e";}
-.osicons-v2-chevron-right:before {content: "\e90f";}
-.osicons-v2-loader:before {content: "\e911";}
-.osicons-v2-arrow-right:before {content: "\e915";}
-.osicons-v2-add:before {content: "\e916";}
-.osicons-v2-dash:before {content: "\e917";}
-.osicons-v2-play:before {content: "\e918";}
-.osicons-v2-spicy:before {content: "\e919";}
-.osicons-v2-lang:before {content: "\e91a";}
-.osicons-v2-link-out:before {content: "\e920";}
-.osicons-v2-filter:before {content: "\e910";}
-.osicons-v2-link-in-card:before {content: "\e921";}
-.osicons-v2-double-arrow-up:before {content: "\e922";}
-.osicons-v2-double-arrow-down:before {content: "\e923";}
-.osicons-v2-double-arrow-left:before {content: "\e924";}
-.osicons-v2-double-arrow-right:before {content: "\e925";}
-.osicons-v2-sitemap:before {content: "\e926";}
-.osicons-v2-rss:before {content: "\e909";}
+.osicons-v2-tw:before,
+.osicons-v2-twitter:before              {content: "\e902";}
+.osicons-v2-share:before                {content: "\e903";}
+.osicons-v2-email:before                {content: "\e904";}
+.osicons-v2-tag:before                  {content: "\e905";}
+.osicons-v2-cancel:before               {content: "\e906";}
+.osicons-v2-chevron-down:before,
+.osicons-v2-arrow-down:before           {content: "\e907";}
+.osicons-v2-search:before               {content: "\e908";}
+.osicons-v2-valid:before,
+.osicons-v2-select:before               {content: "\e90a";}
+.osicons-v2-hamburguer:before           {content: "\e90b";}
+.osicons-v2-chevron-up:before,
+.osicons-v2-arrow-up:before             {content: "\e90d";}
+.osicons-v2-chevron-left:before,
+.osicons-v2-arrow-left:before           {content: "\e90e";}
+.osicons-v2-chevron-right:before,
+.osicons-v2-arrow-right:before          {content: "\e90f";}
+.osicons-v2-loader:before,
+.osicons-v2-reload:before               {content: "\e911";}
+.osicons-v2-arrow-link:before           {content: "\e915";}
+.osicons-v2-add:before,
+.osicons-v2-plus:before                 {content: "\e916";}
+.osicons-v2-dash:before,
+.osicons-v2-minus:before                {content: "\e917";}
+.osicons-v2-play:before                 {content: "\e918";}
+.osicons-v2-spicy:before,
+.osicons-v2-hot:before                  {content: "\e919";}
+.osicons-v2-lang:before,
+.osicons-v2-globe:before                {content: "\e91a";}
+.osicons-v2-link-out:before             {content: "\e920";}
+.osicons-v2-filter:before               {content: "\e910";}
+.osicons-v2-link-in-card:before,
+.osicons-v2-arrow-link-thin:before      {content: "\e921";}
+.osicons-v2-double-arrow-up:before      {content: "\e922";}
+.osicons-v2-double-arrow-down:before    {content: "\e923";}
+.osicons-v2-double-arrow-left:before    {content: "\e924";}
+.osicons-v2-double-arrow-right:before   {content: "\e925";}
+.osicons-v2-sitemap:before              {content: "\e926";}
+.osicons-v2-rss:before                  {content: "\e909";}
+.osicons-v2-info:before                 {content: "\e90c";}
+.osicons-v2-validated:before            {content: "\e912";}
+.osicons-v2-layers:before,
+.osicons-v2-stack:before                {content: "\e927";}
+.osicons-v2-pause:before                {content: "\e914";}
+.osicons-v2-calendar:before             {content: "\e91b";}
+.osicons-v2-clock:before                {content: "\e91c";}
+.osicons-v2-desktop:before              {content: "\e913";}
+.osicons-v2-mobile:before               {content: "\e91f";}
+.osicons-v2-location:before             {content: "\e91e";}
+.osicons-v2-users:before                {content: "\e928";}
+.osicons-v2-dragdrop:before             {content: "\e91d";}
+.osicons-v2-bulb:before                 {content: "\e929";}
+.osicons-v2-camera:before               {content: "\e92a";}
+.osicons-v2-close:before                {content: "\e92b";}
+.osicons-v2-delete:before               {content: "\e92c";}
+.osicons-v2-download:before             {content: "\e92d";}
+.osicons-v2-draggable:before            {content: "\e92e";}
+.osicons-v2-edit:before                 {content: "\e92f";}
+.osicons-v2-error:before                {content: "\e930";}
+.osicons-v2-logout:before               {content: "\e931";}
+.osicons-v2-options:before              {content: "\e932";}
+.osicons-v2-replay:before               {content: "\e933";}
+.osicons-v2-sort:before                 {content: "\e934";}
+.osicons-v2-warning:before              {content: "\e935";}
+.osicons-v2-star-full:before            {content: "\e938";}
+.osicons-v2-star-empty:before           {content: "\e937";}
+.osicons-v2-star-half:before            {content: "\e939";}
+.osicons-v2-business:before             {content: "\e936";}
+.osicons-v2-flag:before                 {content: "\e93a";}
+.osicons-v2-upload:before               {content: "\e93b";}
+.osicons-v2-thumbs-up-full:before       {content: "\e93c";}
+.osicons-v2-thumbs-up-empty:before      {content: "\e93d";}
+.osicons-v2-thumbs-down-full:before     {content: "\e93e";}
+.osicons-v2-thumbs-down-empty:before    {content: "\e93f";}
+.osicons-v2-switch:before               {content: "\e940";}
+.osicons-v2-support:before              {content: "\e941";}
+.osicons-v2-responsive:before           {content: "\e942";}
+.osicons-v2-file:before                 {content: "\e943";}
+.osicons-v2-email-open:before           {content: "\e944";}
+.osicons-v2-dot-full:before             {content: "\e945";}
+.osicons-v2-dot-empty:before            {content: "\e946";}
+.osicons-v2-message:before              {content: "\e947";}
+.osicons-v2-attachment:before           {content: "\e955";} 
+.osicons-v2-story:before                {content: "\e954";} 
+.osicons-v2-blog-post:before            {content: "\e953";} 
+.osicons-v2-video-testimonial:before    {content: "\e952";} 
+.osicons-v2-presentation:before         {content: "\e951";} 
+.osicons-v2-webinar:before              {content: "\e950";} 
+.osicons-v2-news:before                 {content: "\e94f";} 
+.osicons-v2-press-release:before        {content: "\e94e";} 
+.osicons-v2-pin-empty:before            {content: "\e94d";} 
+.osicons-v2-pin-full:before             {content: "\e94c";} 
+.osicons-v2-visible:before              {content: "\e94b";} 
+.osicons-v2-hidden:before               {content: "\e94a";} 
+.osicons-v2-edit-disable:before         {content: "\e949";} 
+.osicons-v2-user:before                 {content: "\e948";} 
+.osicons-v2-deck:before                 {content: "\e956";}
+.osicons-v2-folder:before               {content: "\e95e";} 
+.osicons-v2-link:before                 {content: "\e95d";} 
+.osicons-v2-arrow-thread:before         {content: "\e95c";} 
+.osicons-v2-arrow-link-left:before      {content: "\e95b";} 
+.osicons-v2-arrow-link-up:before        {content: "\e95a";} 
+.osicons-v2-arrow-link-down:before      {content: "\e959";} 
+.osicons-v2-arrow-expand:before         {content: "\e958";} 
+.osicons-v2-arrow-collapse:before       {content: "\e957";} 
+.osicons-v2-settings:before             {content: "\e960";} 
+.osicons-v2-phone:before                {content: "\e95f";}
 
 /**** START OS ICON FONT ****/
 @font-face {
