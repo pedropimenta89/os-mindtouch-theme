@@ -1846,6 +1846,10 @@ h6.main-menu__submenu-content__title {
 
 /* CSS to adjust Header in MindTouch */
 
+input[type=submit].main-menu__call-to-action__btn:hover {
+  color: #222B34;
+}
+
 .main-menu__container li {
     font-family: 'Cabin', Arial, Helvetica, sans-serif !important;
     font-size: inherit !important;
