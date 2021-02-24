@@ -1840,7 +1840,7 @@ header .main-menu__container__search_open:hover,
 
 .content__card__panel__link__text,
 .mobile__content__card__header__go-back-span { 
-  font-family: 'Cabin', Arial, Helvetica, sans-serif;
+  font-family: 'Cabin', Arial, Helvetica, sans-serif !important; /* override css in documentation */
 }
 
 .main-menu__submenu-content__title {
