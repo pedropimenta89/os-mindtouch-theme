@@ -1893,7 +1893,7 @@ header .main-menu__container__search_open:hover,
   margin: 0;
 }
 
-.main-menu__call-to-action__btn {
+input[type=submit].main-menu__call-to-action__btn { /* override css */
   font-size: 1.125em;
   line-height: 1.5;
   font-family: 'Cabin', Arial, Helvetica, sans-serif;
@@ -1904,7 +1904,7 @@ header .main-menu__container__search_open:hover,
   color: #222B34;
 }
 
-.main-menu__call-to-action__btn:hover {
+input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
   background-color: #D99B11; 
 }
 
