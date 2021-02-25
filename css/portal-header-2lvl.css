@@ -1,4 +1,4 @@
-/* OSICONS v2 test */
+/* OSICONS v2 */
 /* START - Extra CSS */
 [class*='osicons-v2'] {
     display: inline-block;
@@ -595,6 +595,11 @@ header .header-info .header-icon {
   height: 16px;
   margin-left: 11px;
 }
+
+.header-login-link { /* IE Fix */
+    height: 50px;
+}
+
 /* Login - END */
 
 header .main-menu__container__section {
@@ -896,7 +901,7 @@ h6.main-menu__submenu-content__title {
     color: #fff;
   }
   
-  .ie .main-menu__submenu-content__panel li { /* IE fix */
+  .main-menu__submenu-content__panel li { /* IE fix */
     display: inline-block;
   }
 
@@ -1916,10 +1921,6 @@ input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
 }
 
 @media (min-width: 992px) { 
-    
-  .main-menu__submenu-content__panel li { /* IE fix */
-    display: inline-block;
-  }
     
   .main-menu__call-to-action {
     margin: 0 16px 0 8px;
