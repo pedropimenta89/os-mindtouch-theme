@@ -1916,6 +1916,11 @@ input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
 }
 
 @media (min-width: 992px) { 
+    
+  .main-menu__submenu-content__panel li { /* IE fix */
+    display: inline-block;
+  }
+    
   .main-menu__call-to-action {
     margin: 0 16px 0 8px;
   }
@@ -1959,6 +1964,16 @@ input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
 }
 
 /* DISTANCE BETWEEN CONTENT AND HEADER - MINDTOUCH */
+
+body.elm-user-anonymous .elm-header-custom { 
+  margin-top: 62px;
+}
+
+@media (min-width: 992px) { 
+  body.elm-user-anonymous .elm-header-custom { 
+    margin-top: 90px;
+  }
+}
 
 
 /* TEST IN DEV */
