@@ -44,9 +44,9 @@ function openSearch() {
   var mainMenuSearchWidth;
 
   if (mobileBreak.matches) {
-    mainMenuSearchWidth = mainMenuSearchArea.offset().left + mainMenuSearchArea.width();
+    mainMenuSearchWidth = mainMenuSearchArea.offsetLeft + mainMenuSearchArea.width();
   } else {
-    mainMenuSearchWidth = mainMenuSearchArea.offset().left - mainMenuLogoArea.offset().left - mainMenuLogoArea.outerWidth() + mainMenuSearchArea.width() - 16; /*16 is the padding in the containe os (parent of the logo area */ 
+    mainMenuSearchWidth = mainMenuSearchArea.offsetLeft - mainMenuLogoArea.offsetLeft - mainMenuLogoArea.clientWidth + mainMenuSearchArea.clientWidth - 16; /*16 is the padding in the containe os (parent of the logo area */ 
   } // GET WIDTH FROM LOGO AREA TO SEARCH AREA
 
   document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true")
