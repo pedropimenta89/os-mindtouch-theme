@@ -95,17 +95,17 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
 
         $(this).attr('aria-expanded', 'true'); // GET THE FULL HEIGHT      
         if(!$(this).closest('.main-menu__container').hasClass('main-footer') ) {
-        var elemHeight = _elem.css('height', 'calc(100% - 62px)').height();
+        //var elemHeight = _elem.css('height', 'calc(100% - 62px)').height();
+        var elemHeight = _elem.style.height = 'calc(100% - 62px);
+        elemHeight = elemHeight.offsetHeight;
 
-        _elem.height('0');
+        _elem.style.height = 0;
 
         _elem.animate({
           height: elemHeight
         }, 250, function animateHeightAuto() {
           // AFTER THE FUNCTION CHANGE HEIGHT SO IT DOESN'T FORCE THE HEIGHT
-           _elem.css({
-             'height': 'calc(100% - 62px)'
-           });
+           _elem.style.height = 'calc(100% - 62px);
         });
         }
         
