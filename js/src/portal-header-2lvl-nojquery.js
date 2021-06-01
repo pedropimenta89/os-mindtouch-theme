@@ -45,18 +45,16 @@ function openSearch() {
   SearchOpen.style.width = mainMenuSearchWidth+'px';
   document.querySelector('.main-menu__container__search__input').focus();
 
-} // ////////////////////////////////////
+}
+
+// ////////////////////////////////////
 // OVERLAY
-
-
-$(document).on('click', '.main-menu__overlay', function clickOverlay() {
+document.querySelector('.main-menu__overlay').addEventListener('click', function() {
   clearOpenSubmenu('main-menu__overlay');
 }); // ////////////////////////////////////
-// MENU BURGUER
-// $(function(){
-    // var burguerButton = $('.main-menu__container .menu-burger > span');
 
-    $(document).on('click', '.main-menu__container .menu-burger', function clickMenuBurger() {
+// MENU BURGUER
+$(document).on('click', '.main-menu__container .menu-burger', function clickMenuBurger() {
       // TO CLOSE
       if ($(this).closest('.main-menu__container').hasClass('open__main-menu')) {
         closeSearch();
@@ -118,8 +116,7 @@ $(document).on('click', '.main-menu__overlay', function clickOverlay() {
           $('html').addClass('open__main-menu__overflow-hidden');
         }
       }
-    }); // OPEN SUBMENUS
-//});
+}); // OPEN SUBMENUS
 
 $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="true"], .main-menu__container__dropdown button[aria-expanded]', function clickShowSubmenus() {
   var elem = $(this); // SAVE THE VALUES BEFORE THE CLEAN OPEN SUBMENU FUNCTION{
@@ -164,7 +161,7 @@ $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="t
     });
 });
 
-$(document).on('click', '.main-menu__item[aria-haspopup="true"]', function(event) {
+document.querySelector('.main-menu__item[aria-haspopup="true"]').addEventListener('click', function(event) {
   event.preventDefault();
 });
 
