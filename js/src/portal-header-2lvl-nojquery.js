@@ -31,23 +31,17 @@ function openSearch() {
   var mainMenuLogoArea = document.querySelector('.main-menu__container__logo');
   var mobileBreak = window.matchMedia('(max-width: 991.98px)');
   var mainMenuSearchWidth;
+  var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
+  
+  SearchOpen.style.width = '0px';
 
   if (mobileBreak.matches) {
     mainMenuSearchWidth = mainMenuSearchArea.offsetLeft + mainMenuSearchArea.offsetWidth;
   } else {
     mainMenuSearchWidth = mainMenuSearchArea.offsetLeft - mainMenuLogoArea.offsetLeft - mainMenuLogoArea.offsetWidth + mainMenuSearchArea.clientWidth - 16; /*16 is the padding in the containe os (parent of the logo area */ 
   } // GET WIDTH FROM LOGO AREA TO SEARCH AREA
-
-  /*
-  $('.main-menu__container__search_open').attr('aria-expanded', 'true').parent().find('.main-menu__container__search_input_container').animate({
-    width: mainMenuSearchWidth
-  }, 100, function(){
-    $('.main-menu__container__search__input').focus();
-  });
-  */
   
   document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true");
-  var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
   SearchOpen.style.width = mainMenuSearchWidth+'px';
   document.querySelector('.main-menu__container__search__input').focus();
 
