@@ -38,11 +38,19 @@ function openSearch() {
     mainMenuSearchWidth = mainMenuSearchArea.offset().left - mainMenuLogoArea.offset().left - mainMenuLogoArea.outerWidth() + mainMenuSearchArea.width() - 16; /*16 is the padding in the containe os (parent of the logo area */ 
   } // GET WIDTH FROM LOGO AREA TO SEARCH AREA
 
+  /*
   $('.main-menu__container__search_open').attr('aria-expanded', 'true').parent().find('.main-menu__container__search_input_container').animate({
     width: mainMenuSearchWidth
   }, 100, function(){
     $('.main-menu__container__search__input').focus();
   });
+  */
+  
+  document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true");
+  var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
+  SearchOpen.animate({width: mainMenuSearchWidth}, 100);
+  document.querySelector('.main-menu__container__search__input').focus();
+
 } // ////////////////////////////////////
 // OVERLAY
 
