@@ -1,7 +1,7 @@
 "use strict";
 
-// SEARCH
-document.querySelector('.main-menu__container__search_open').addEventListener('click', function() {
+// SEARCH   
+$(document).on('click', '.main-menu__container__search_open', function clickSearchOpen() {
   var window_size = window.matchMedia('(min-width: 992px)');
   if(window_size.matches == true){
     clearOpenSubmenu('main-menu__overlay');
@@ -9,33 +9,21 @@ document.querySelector('.main-menu__container__search_open').addEventListener('c
   } else {
     mobileSearch();
   }
-}, false);
+});
 
-document.querySelector('.main-menu__container__search_cancel').addEventListener('click', function() {
+$(document).on('click', '.main-menu__container__search_cancel', function clickSearchCancel() {
   closeSearch();
-}, false);
+});
 
 function closeSearch() {
   var window_size = window.matchMedia('(min-width: 992px)');
 
   if (window_size.matches == true) {
-    document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "false");
-    var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
-    //SearchOpen.style.transition = "width 1s";
-    //SearchOpen.style.width = 0;
-    SearchOpen.animate({width: 0}, 100);
-    /*
-    SearchOpen.animate({
-      width: 0
-    }, 100);
-    */
-    /*
     $('.main-menu__container__search_open').attr('aria-expanded', 'false').parent().find('.main-menu__container__search_input_container').animate({
       width: 0
     }, 100);
-    */
   } 
-  document.querySelector('.main-menu__container__search_input_container input').value = '';
+  $('.main-menu__container__search_input_container input').val('');
 }
 
 function openSearch() {
@@ -60,12 +48,14 @@ function openSearch() {
 // OVERLAY
 
 
-document.querySelector('.main-menu__overlay').addEventListener('click', function() {
+$(document).on('click', '.main-menu__overlay', function clickOverlay() {
   clearOpenSubmenu('main-menu__overlay');
-});
+}); // ////////////////////////////////////
 // MENU BURGUER
+// $(function(){
+    // var burguerButton = $('.main-menu__container .menu-burger > span');
 
-document.querySelector('.main-menu__container .menu-burger').addEventListener('click', function clickMenuBurger() {
+    $(document).on('click', '.main-menu__container .menu-burger', function clickMenuBurger() {
       // TO CLOSE
       if ($(this).closest('.main-menu__container').hasClass('open__main-menu')) {
         closeSearch();
@@ -127,7 +117,8 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
           $('html').addClass('open__main-menu__overflow-hidden');
         }
       }
-}); // OPEN SUBMENUS
+    }); // OPEN SUBMENUS
+//});
 
 $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="true"], .main-menu__container__dropdown button[aria-expanded]', function clickShowSubmenus() {
   var elem = $(this); // SAVE THE VALUES BEFORE THE CLEAN OPEN SUBMENU FUNCTION{
@@ -172,8 +163,7 @@ $(document).on('click', '.main-menu__container .main-menu__item[aria-haspopup="t
     });
 });
 
-
-document.querySelector('.main-menu__item[aria-haspopup="true"]').addEventListener('click', function() {
+$(document).on('click', '.main-menu__item[aria-haspopup="true"]', function(event) {
   event.preventDefault();
 });
 
@@ -186,9 +176,9 @@ function mainMenuState() {
   // IF A SUBMENU IS OPENED PLACE A OPEN CLASS IN THE MAIN MENU CONTAINER 
   var expanded = $('.main-menu__item[aria-expanded="true"]');
   if (expanded.length > 0 && !$('.main-menu__container').hasClass('open__main-menu')) {
-    document.querySelector('.main-menu__container').classList.add("open__main-menu");
+    $('.main-menu__container').addClass('open__main-menu');
   } else if (expanded.length < 1) {
-    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
+    $('.main-menu__container').removeClass('open__main-menu');
   }
 } //  THIS FUNCTION RUNS EVERYTIME THE OVERLAY IS CLICKED AND A SUBMENU IS OPENED
 // IN CASE THE OVERLAY IS CLICKED IT WILL CLOSE THE MENU
@@ -198,13 +188,13 @@ function clearOpenSubmenu(elem, elemExpand) {
   var mobileView = window.matchMedia('(max-width: 991.98px)');
 
   if (elem == 'main-menu__overlay') {
-    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
-    document.querySelector('html').classList.remove("open__main-menu__overflow-hidden");
+    $('.main-menu__container').removeClass('open__main-menu');
+    $('html').removeClass('open__main-menu__overflow-hidden');
 
     if (mobileView.matches) {
       $('.main-menu__container .menu-burger').attr('aria-expanded', 'false');
 
-      var _elem2 = document.querySelector('.main-menu__container__nav-content');
+      var _elem2 = $('.main-menu__container__nav-content');
 
       _elem2.css('overflow', 'hidden').animate({
         height: '0px'
@@ -236,14 +226,16 @@ function cleanInlineMainMenu() {
 
   if (width993.matches && $('.main-menu__container__nav-content').length > 0 && $('.main-menu__container__nav-content')[0].hasAttribute('style')) {
     $('.main-menu__container__nav-content')[0].removeAttribute('style');
-    document.querySelector('.menu-burger').classList.remove("open__main-menu");
-    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
+    $('.menu-burger').removeClass('open__main-menu');
+    $('.main-menu__container').removeClass('open__main-menu');
     resetMenuOnMobile = true;
   } else if(mobileView.matches && resetMenuOnMobile == true) {
     resetMenuOnMobile = false;
-    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
+    //closeSearch();
+    $('.main-menu__container').removeClass('open__main-menu');
+   //  burguerButton.html("MENU");
     $(this).attr('aria-expanded', 'false');
-    var elem = document.querySelector('.main-menu__container__nav-content');
+    var elem = $('.main-menu__container__nav-content');
     elem.css('overflow', 'hidden').animate({
       height: '0px'
     }, 200);
@@ -252,7 +244,7 @@ function cleanInlineMainMenu() {
     }
 
     if ($('html').hasClass('open__main-menu__overflow-hidden')) {
-      document.querySelector('html').classList.remove("open__main-menu__overflow-hidden");
+      $('html').removeClass('open__main-menu__overflow-hidden');
     }
   } else if($('.main-menu__container__search_input_container').length > 0) {
       if($('.main-menu__container__search_input_container')[0].hasAttribute('style')){
@@ -261,8 +253,7 @@ function cleanInlineMainMenu() {
   }
 }
 
-window.addEventListener('resize', cleanInlineMainMenu);
-// /////////////////////////
+window.addEventListener('resize', cleanInlineMainMenu); // /////////////////////////
 // MAIN NAV - DESKTOP KEYBOARD NAVIGATION 
 // /////////////////////////
 
@@ -364,36 +355,36 @@ if ($('[class*="main-menu__container__transparent-"]').length == 0 && $('.main-m
     }
 
     if(mainMenuContainer != null) {
-    const mainMenuBurger = document.querySelector('.main-menu__container .menu-burger');
+    const mainMenuBurger = $('.main-menu__container .menu-burger');
     const mainMenuAnimationClass = 'main-menu__fade';
     const mainMenuHeight = mainMenuContainer.height();
     const mobileView = window.matchMedia("(max-width: 991.98px)");
-    const html = document.querySelector('html');
+    const html = $('html');
 
     if (mobileView.matches) {
         var currentScroll = window.pageYOffset;
         //THE DIFFERENCE BETWEEN THE PREVIOUS AND CURRENT SCROLL BEING MORE THAN THE MENU HEIGHT PREVENTS A JUMP EFFECT IN MOBILE WHEN HITTING THE BOTTOM OF THE SCREEN. 
         if (Math.abs(previousScroll - currentScroll) >= mainMenuHeight && mainMenuBurger.attr('aria-expanded') == 'false') {
           if (previousScroll < currentScroll && $(document).scrollTop() > 0) {
-            mainMenuContainer.classList.add(mainMenuAnimationClass);
-            html.classList.add('main-menu__hidden');
+            mainMenuContainer.addClass(mainMenuAnimationClass);
+            html.addClass('main-menu__hidden');
           } else {
             if(!$('.main-footer').hasClass('open__main-menu')){
               setTimeout(function(){
-                mainMenuContainer.classList.remove(mainMenuAnimationClass);
-                html.classList.remove('main-menu__hidden');
+                mainMenuContainer.removeClass(mainMenuAnimationClass);
+                html.removeClass('main-menu__hidden');
               }, 50); 
             } else if ($('.main-footer').hasClass('open__main-menu')) {
-              mainMenuContainer.classList.add(mainMenuAnimationClass);
-              html.classList.add('main-menu__hidden');
+              mainMenuContainer.addClass(mainMenuAnimationClass);
+              html.addClass('main-menu__hidden');
             }
           }
           previousScroll = currentScroll;
         }
     } else {
       if( mainMenuContainer.hasClass(mainMenuAnimationClass) ){
-        mainMenuContainer.classList.remove(mainMenuAnimationClass);
-        html.classList.remove('main-menu__hidden');
+        mainMenuContainer.removeClass(mainMenuAnimationClass);
+        html.removeClass('main-menu__hidden');
       }
     } 
   }
