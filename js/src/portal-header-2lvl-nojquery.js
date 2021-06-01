@@ -21,7 +21,7 @@ function closeSearch() {
   if (window_size.matches == true) {
     document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "false");
     var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
-    SearchOpen.animate({width: 0}, 100);
+    SearchOpen.style.width = 0;
   } 
   document.querySelector('.main-menu__container__search_input_container input').value = '';
 }
@@ -48,7 +48,7 @@ function openSearch() {
   
   document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true");
   var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
-  SearchOpen.animate({width: mainMenuSearchWidth}, 100);
+  SearchOpen.style.width = mainMenuSearchWidth+'px';
   document.querySelector('.main-menu__container__search__input').focus();
 
 } // ////////////////////////////////////
