@@ -54,7 +54,7 @@ document.querySelector('.main-menu__overlay').addEventListener('click', function
 }); // ////////////////////////////////////
 
 // MENU BURGUER
-$(document).on('click', '.main-menu__container .menu-burger', function clickMenuBurger() {
+document.querySelector('.main-menu__container .menu-burger').addEventListener('click', function() {
       // TO CLOSE
       if ($(this).closest('.main-menu__container').hasClass('open__main-menu')) {
         closeSearch();
