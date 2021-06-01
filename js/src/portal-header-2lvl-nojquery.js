@@ -19,11 +19,11 @@ function closeSearch() {
   var window_size = window.matchMedia('(min-width: 992px)');
 
   if (window_size.matches == true) {
-    document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "false")
+    document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "false");
     var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
     //SearchOpen.style.transition = "width 1s";
     //SearchOpen.style.width = 0;
-    SearchOpen.animate({width: 0}, 100)
+    SearchOpen.animate({width: 0}, 100);
     /*
     SearchOpen.animate({
       width: 0
@@ -50,11 +50,11 @@ function openSearch() {
     mainMenuSearchWidth = mainMenuSearchArea.offsetLeft - mainMenuLogoArea.offsetLeft - mainMenuLogoArea.clientWidth + mainMenuSearchArea.clientWidth - 16; /*16 is the padding in the containe os (parent of the logo area */ 
   } // GET WIDTH FROM LOGO AREA TO SEARCH AREA
 
-  document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true")
+  document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "true");
   var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
   //SearchOpen.style.transition = "width 1s";
   //SearchOpen.style.width = mainMenuSearchWidth;
-  SearchOpen.animate({width: mainMenuSearchWidth}, 100)
+  SearchOpen.animate({width: mainMenuSearchWidth}, 100);
   document.querySelector('.main-menu__container__search__input').focus();
   /*
   SearchOpen.animate({
