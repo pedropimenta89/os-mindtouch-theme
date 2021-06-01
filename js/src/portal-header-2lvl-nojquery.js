@@ -56,11 +56,12 @@ document.querySelector('.main-menu__overlay').addEventListener('click', function
 // MENU BURGUER
 document.querySelector('.main-menu__container .menu-burger').addEventListener('click', function() {
       // TO CLOSE
-      if ($(this).closest('.main-menu__container').hasClass('open__main-menu')) {
+      var mainMenuContainer = document.querySelector('.main-menu__container .menu-burger');
+      if (mainMenuContainer.closest('.main-menu__container').classList.contains('open__main-menu')) {
         closeSearch();
-        $(this).closest('.main-menu__container').removeClass('open__main-menu');
+        mainMenuContainer.closest('.main-menu__container').classList.remove('open__main-menu')
       //  burguerButton.html("MENU");
-        $(this).attr('aria-expanded', 'false');
+        mainMenuContainer.setAttribute("aria-expanded", "false");
         var elem = document.querySelector('.main-menu__container__nav-content');
         elem.css('overflow', 'hidden').animate({
           height: '0px'
