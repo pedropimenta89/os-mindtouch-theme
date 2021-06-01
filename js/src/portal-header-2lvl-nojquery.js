@@ -27,8 +27,8 @@ function closeSearch() {
 }
 
 function openSearch() {
-  var mainMenuSearchArea = $('.main-menu__container__search');
-  var mainMenuLogoArea = $('.main-menu__container__logo');
+  var mainMenuSearchArea = document.querySelector('.main-menu__container__search');
+  var mainMenuLogoArea = document.querySelector('.main-menu__container__logo');
   var mobileBreak = window.matchMedia('(max-width: 991.98px)');
   var mainMenuSearchWidth;
 
@@ -42,7 +42,6 @@ function openSearch() {
     width: mainMenuSearchWidth
   }, 100, function(){
     $('.main-menu__container__search__input').focus();
-    //$(this).find('input[type="search"]').triggerHandler("focus");
   });
 } // ////////////////////////////////////
 // OVERLAY
