@@ -19,11 +19,11 @@ function closeSearch() {
   var window_size = window.matchMedia('(min-width: 992px)');
 
   if (window_size.matches == true) {
-    $('.main-menu__container__search_open').attr('aria-expanded', 'false').parent().find('.main-menu__container__search_input_container').animate({
-      width: 0
-    }, 100);
+    document.querySelector('.main-menu__container__search_open').setAttribute("aria-expanded", "false");
+    var SearchOpen = document.querySelector('.main-menu__container__search_open').parentNode.querySelector('.main-menu__container__search_input_container');
+    SearchOpen.animate({width: 0}, 100);
   } 
-  $('.main-menu__container__search_input_container input').val('');
+  document.querySelector('.main-menu__container__search_input_container input').value = '';
 }
 
 function openSearch() {
