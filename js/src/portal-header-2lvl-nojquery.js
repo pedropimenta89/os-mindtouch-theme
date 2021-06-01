@@ -61,7 +61,7 @@ $(document).on('click', '.main-menu__container .menu-burger', function clickMenu
         $(this).closest('.main-menu__container').removeClass('open__main-menu');
       //  burguerButton.html("MENU");
         $(this).attr('aria-expanded', 'false');
-        var elem = $('.main-menu__container__nav-content');
+        var elem = document.querySelector('.main-menu__container__nav-content');
         elem.css('overflow', 'hidden').animate({
           height: '0px'
         }, 200);
@@ -71,7 +71,7 @@ $(document).on('click', '.main-menu__container .menu-burger', function clickMenu
         }
      
         if ($('html').hasClass('open__main-menu__overflow-hidden')) {
-          $('html').removeClass('open__main-menu__overflow-hidden');
+          document.querySelector('html').classList.remove("open__main-menu__overflow-hidden");
         }
       } else {
         // TO OPEN                  
@@ -91,7 +91,7 @@ $(document).on('click', '.main-menu__container .menu-burger', function clickMenu
 
         // burguerButton.html("CLOSE");
         
-        var _elem = $('.main-menu__container__nav-content');
+        var _elem = document.querySelector('.main-menu__container__nav-content');
 
         $(this).attr('aria-expanded', 'true'); // GET THE FULL HEIGHT      
         if(!$(this).closest('.main-menu__container').hasClass('main-footer') ) {
@@ -113,7 +113,7 @@ $(document).on('click', '.main-menu__container .menu-burger', function clickMenu
         var mobileView = window.matchMedia('(max-width: 991.98px)');
 
         if (mobileView.matches) {
-          $('html').addClass('open__main-menu__overflow-hidden');
+          document.querySelector('html').classList.remove("open__main-menu__overflow-hidden");
         }
       }
 }); // OPEN SUBMENUS
@@ -174,9 +174,9 @@ function mainMenuState() {
   // IF A SUBMENU IS OPENED PLACE A OPEN CLASS IN THE MAIN MENU CONTAINER 
   var expanded = $('.main-menu__item[aria-expanded="true"]');
   if (expanded.length > 0 && !$('.main-menu__container').hasClass('open__main-menu')) {
-    $('.main-menu__container').addClass('open__main-menu');
+    document.querySelector('.main-menu__container').classList.add("open__main-menu");
   } else if (expanded.length < 1) {
-    $('.main-menu__container').removeClass('open__main-menu');
+    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
   }
 } //  THIS FUNCTION RUNS EVERYTIME THE OVERLAY IS CLICKED AND A SUBMENU IS OPENED
 // IN CASE THE OVERLAY IS CLICKED IT WILL CLOSE THE MENU
@@ -186,13 +186,13 @@ function clearOpenSubmenu(elem, elemExpand) {
   var mobileView = window.matchMedia('(max-width: 991.98px)');
 
   if (elem == 'main-menu__overlay') {
-    $('.main-menu__container').removeClass('open__main-menu');
-    $('html').removeClass('open__main-menu__overflow-hidden');
+    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
+    document.querySelector('html').classList.remove("open__main-menu__overflow-hidden");
 
     if (mobileView.matches) {
-      $('.main-menu__container .menu-burger').attr('aria-expanded', 'false');
+      document.querySelector('.main-menu__container .menu-burger').setAttribute("aria-expanded", "false");
 
-      var _elem2 = $('.main-menu__container__nav-content');
+      var _elem2 = document.querySelector('.main-menu__container__nav-content');
 
       _elem2.css('overflow', 'hidden').animate({
         height: '0px'
@@ -224,16 +224,16 @@ function cleanInlineMainMenu() {
 
   if (width993.matches && $('.main-menu__container__nav-content').length > 0 && $('.main-menu__container__nav-content')[0].hasAttribute('style')) {
     $('.main-menu__container__nav-content')[0].removeAttribute('style');
-    $('.menu-burger').removeClass('open__main-menu');
-    $('.main-menu__container').removeClass('open__main-menu');
+    document.querySelector('.menu-burger').classList.remove("open__main-menu");
+    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
     resetMenuOnMobile = true;
   } else if(mobileView.matches && resetMenuOnMobile == true) {
     resetMenuOnMobile = false;
     //closeSearch();
-    $('.main-menu__container').removeClass('open__main-menu');
+    document.querySelector('.main-menu__container').classList.remove("open__main-menu");
    //  burguerButton.html("MENU");
     $(this).attr('aria-expanded', 'false');
-    var elem = $('.main-menu__container__nav-content');
+    var elem = document.querySelector('.main-menu__container__nav-content');
     elem.css('overflow', 'hidden').animate({
       height: '0px'
     }, 200);
@@ -275,7 +275,7 @@ Array.prototype.forEach.call(appsMenuItems, function (el, i) {
           $(this).click();
         }
 
-        $('.main-menu__container__search_open').focus();
+        document.querySelector('.main-menu__container__search_open').focus();
         break;
     }
   });
