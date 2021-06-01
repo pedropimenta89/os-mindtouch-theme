@@ -1,7 +1,7 @@
 "use strict";
 
 // SEARCH
-document.querySelector('.main-menu__container__search_open').addEventListener('click', function() {
+$(document).on('click', '.main-menu__container__search_open', function clickSearchOpen() {
   var window_size = window.matchMedia('(min-width: 992px)');
   if(window_size.matches == true){
     clearOpenSubmenu('main-menu__overlay');
@@ -9,7 +9,7 @@ document.querySelector('.main-menu__container__search_open').addEventListener('c
   } else {
     mobileSearch();
   }
-}, false);
+});
 
 document.querySelector('.main-menu__container__search_cancel').addEventListener('click', function() {
   closeSearch();
