@@ -96,17 +96,17 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
 
         mainMenuContainer.setAttribute("aria-expanded", "true"); // GET THE FULL HEIGHT
         if(!mainMenuContainer.closest('.main-menu__container').classList.add('main-footer') ) {
-        var elemHeight = _elem.style.height = 'calc(100% - 62px)';
-        elemHeight = elemHeight.offsetHeight;
+          _elem.style.height = 'calc(100% - 62px)';
+          var elemHeight = _elem.offsetHeight;
 
-        _elem.style.height = '0px';
+          _elem.style.height = '0px';
 
-        _elem.animate({
-          height: elemHeight
-        }, 250, function animateHeightAuto() {
-          // AFTER THE FUNCTION CHANGE HEIGHT SO IT DOESN'T FORCE THE HEIGHT
-           _elem.style.height = 'calc(100% - 62px)';
-        });
+          _elem.animate({
+            height: elemHeight
+          }, 250, function animateHeightAuto() {
+            // AFTER THE FUNCTION CHANGE HEIGHT SO IT DOESN'T FORCE THE HEIGHT
+             _elem.style.height = 'calc(100% - 62px)';
+          });
         }
         
 
