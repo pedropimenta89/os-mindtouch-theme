@@ -102,7 +102,7 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
           _elem.style.height = '0px';
 
           _elem.animate({
-            height: elemHeight
+            height: elemHeight+'px'
           }, 250, function animateHeightAuto() {
             // AFTER THE FUNCTION CHANGE HEIGHT SO IT DOESN'T FORCE THE HEIGHT
              _elem.style.height = 'calc(100% - 62px)';
