@@ -105,7 +105,7 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
             height: elemHeight+'px'
           }, 250, function animateHeightAuto() {
             // AFTER THE FUNCTION CHANGE HEIGHT SO IT DOESN'T FORCE THE HEIGHT
-             _elem.style.height = 'calc(100% - 62px)';
+             _elem.style.height = elemHeight;
           });
         }
         
