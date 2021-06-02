@@ -99,7 +99,7 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
         var elemHeight = _elem.style.height = 'calc(100% - 62px)';
         elemHeight = elemHeight.offsetHeight;
 
-        _elem.style.height = 0;
+        _elem.style.height = '0px';
 
         _elem.animate({
           height: elemHeight
