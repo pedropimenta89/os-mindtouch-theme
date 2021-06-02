@@ -62,7 +62,7 @@ document.querySelector('.main-menu__container .menu-burger').addEventListener('c
         mainMenuContainer.closest('.main-menu__container').classList.remove('open__main-menu')
       //  burguerButton.html("MENU");
         mainMenuContainer.setAttribute("aria-expanded", "false");
-        var elem = document.querySelector('.main-menu__container__nav-content');
+        var elem = $('.main-menu__container__nav-content');
         elem.css('overflow', 'hidden').animate({
           height: '0px'
         }, 200);
@@ -233,7 +233,7 @@ function cleanInlineMainMenu() {
     document.querySelector('.main-menu__container').classList.remove("open__main-menu");
    //  burguerButton.html("MENU");
     $(this).attr('aria-expanded', 'false');
-    var elem = document.querySelector('.main-menu__container__nav-content');
+    var elem = $('.main-menu__container__nav-content');
     elem.css('overflow', 'hidden').animate({
       height: '0px'
     }, 200);
