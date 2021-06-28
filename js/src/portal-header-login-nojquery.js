@@ -1,4 +1,4 @@
-setTimeout(function(){
+document.addEventListener('DOMContentLoaded', function(){
     /* Login Phone */
     if(document.querySelector('.header-login > div').classList.contains('header-login-dropdown')) {
         var logDropMenu = document.querySelector('header .header-login-dropdown .header-login-dropdown-menu');
@@ -70,4 +70,4 @@ setTimeout(function(){
     }
     var timeoutHandle =  "";
     var mouse_is_inside = false;
-}, 1001);
+});
