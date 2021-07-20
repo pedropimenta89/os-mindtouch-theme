@@ -749,7 +749,7 @@ h6.main-menu__submenu-content__title {
 
   .main-menu__container__logo img {
     font-size: 0.667em; /* in case the image doesn't load */
-    height: 100%; /* for ie11 svg fix */
+    height: 41px; /* for ie11 svg fix */
     width: 155px;
   }
   
@@ -1048,6 +1048,7 @@ h6.main-menu__submenu-content__title {
     position: absolute;
     right: 59px;
     top: 15px;
+    height: 2.5em;
     opacity: 1;
     padding: 5px 12px;
     transition: opacity 200ms linear;
@@ -1964,6 +1965,14 @@ input[type=submit].main-menu__call-to-action__btn:hover { /* override css */
  
 }
 
+.main-menu__call-to-action a.main-menu__call-to-action__btn:visited{
+    color:#222b34;		   
+}
+
+.main-menu__call-to-action a.main-menu__call-to-action__btn:hover{    
+    color: #202327;
+}
+
 /* DISTANCE BETWEEN CONTENT AND HEADER - MINDTOUCH */
 
 body.elm-user-anonymous .elm-header-custom { 
@@ -1975,7 +1984,6 @@ body.elm-user-anonymous .elm-header-custom {
     margin-top: 90px;
   }
 }
-
 
 /* TEST IN DEV */
 /*
